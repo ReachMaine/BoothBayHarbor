@@ -1,0 +1,57 @@
+/*
+Theme Name: boothbayharbor
+Template: superlist
+Description: child theme for Boothbay Harbor Chamber of commerce.
+Version: 1.0.0
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+/*** settings ***/
+.center {
+  text-align: center; }
+
+.aligncenter {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 22px;
+  display: block !important; }
+
+.alignleft {
+  float: left;
+  margin: 0px 30px 22px 0px; }
+
+.alignright {
+  float: right;
+  margin: 0px 0px 22px 30px; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+small {
+  font-size: 12px;
+  line-height: 14px; }
+
+b {
+  font-weight: bold; }
+
+.normal {
+  font-weight: normal; }
+
+.hidden {
+  display: none; }
+
+/*** end settings ***/
+/***  Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/* General */
+/*** end colors ****/
+.page-wrapper .header .header-wrapper {
+  background-color: #044357; }
+  .page-wrapper .header .header-wrapper .header-logo img {
+    max-height: initial; }
+
+/* ----  Media Settings --------------------------------- */
+/* end Media Settings ------------------------------------------ */

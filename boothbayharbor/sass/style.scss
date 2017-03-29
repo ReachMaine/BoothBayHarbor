@@ -1,0 +1,23 @@
+/*
+Theme Name: boothbayharbor
+Template: superlist
+Description: child theme for Boothbay Harbor Chamber of commerce.
+Version: 1.0.0
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+
+@import "partials/settings";
+@import "partials/colors";
+// header
+.page-wrapper {
+    .header .header-wrapper {
+        background-color: $header-bkg;
+        .header-logo img {
+            max-height: initial;
+        }
+    }
+}
+
+@import "partials/media"; // keep at end of of file
