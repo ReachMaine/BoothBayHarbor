@@ -11,4 +11,11 @@
     .header-sticky .header-wrapper.affix {
         height: inherit;
     }
+
+    .header-navigation .nav > li > a {
+        color: white;
+    }
+    .header-navigation .nav > li.current-menu-item > a {
+        color: $bbh-orange; 
+    }
 }

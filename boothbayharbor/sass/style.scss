@@ -13,6 +13,13 @@ License URI: http://www.gnu.org/licenses/gpl.html
 // topbar
 .header .header-bar {
     background-color: $topbar-bkg;
+    .header-bar-left {
+        // take out spacing between social icons
+        .sow-features-feature {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
 }
 // header
 .page-wrapper {
@@ -23,11 +30,32 @@ License URI: http://www.gnu.org/licenses/gpl.html
         }
     }
 }
-// header top
+.header-navigation .nav > li > a {
+    color: white;
+}
+// header top widget area
 .bbh-memsearch-short.widget_inventor_cover {
     .inventor-cover {
         height: 200px;
     }
+}
+// slideshow in header-top
+
+.inventor-slider-list.navigation-arrows {
+    .owl-controls {
+        .owl-prev, .owl-next, .owl-prev:hover, .owl-next:hover {
+            background-color: transparent!important;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            //color: white;
+        }
+        .owl-prev:before, .owl-next:before  {
+            color: rgba(255, 255, 255, .60) !important;
+        }
+        .owl-dots {
+            display: none!important;
+        }
+    } // end owl-controls
 }
 // content
 

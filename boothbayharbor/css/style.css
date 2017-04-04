@@ -101,14 +101,29 @@ button,
 /*** end settings ***/
 .header .header-bar {
   background-color: #e86c1f; }
+  .header .header-bar .header-bar-left .sow-features-feature {
+    padding-left: 0px;
+    padding-right: 0px; }
 
 .page-wrapper .header .header-wrapper {
   background-color: #044357; }
   .page-wrapper .header .header-wrapper .header-logo img {
     max-height: initial; }
 
+.header-navigation .nav > li > a {
+  color: white; }
+
 .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
   height: 200px; }
+
+.inventor-slider-list.navigation-arrows .owl-controls .owl-prev, .inventor-slider-list.navigation-arrows .owl-controls .owl-next, .inventor-slider-list.navigation-arrows .owl-controls .owl-prev:hover, .inventor-slider-list.navigation-arrows .owl-controls .owl-next:hover {
+  background-color: transparent !important;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
+.inventor-slider-list.navigation-arrows .owl-controls .owl-prev:before, .inventor-slider-list.navigation-arrows .owl-controls .owl-next:before {
+  color: rgba(255, 255, 255, 0.6) !important; }
+.inventor-slider-list.navigation-arrows .owl-controls .owl-dots {
+  display: none !important; }
 
 .post-detail .post-content a {
   border-bottom: 0px; }
@@ -125,4 +140,10 @@ button,
     width: 50%; } }
 @media (min-width: 768px) {
   .header-sticky .header-wrapper.affix {
-    height: inherit; } }
+    height: inherit; }
+
+  .header-navigation .nav > li > a {
+    color: white; }
+
+  .header-navigation .nav > li.current-menu-item > a {
+    color: #e86c1f; } }
