@@ -22,5 +22,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 .footer-top  {
     background-color: $footer-bkg;
+    .footer-area {
+        padding-top: 30px;
+    }
 }
 @import "partials/media"; // keep at end of of file

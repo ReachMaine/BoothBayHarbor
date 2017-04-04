@@ -74,6 +74,10 @@ h6 {
 p {
   font-size: 1em; }
 
+.page.page-template-page-fullwidth-no-title #primary .post-content,
+.page.page-template-page-no-title #primary .post-content {
+  margin-top: 0px; }
+
 /*** end settings ***/
 /***  Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
@@ -86,6 +90,8 @@ p {
 
 .footer-top {
   background-color: #044357; }
+  .footer-top .footer-area {
+    padding-top: 30px; }
 
 /* ----  Media Settings --------------------------------- */
 /* end Media Settings ------------------------------------------ */

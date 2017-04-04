@@ -50,4 +50,9 @@ h6 {
 p {
     font-size: 1em;
 }
+.page.page-template-page-fullwidth-no-title #primary .post-content,
+.page.page-template-page-no-title #primary .post-content {
+    margin-top: 0px;
+}
+
 /*** end settings ***/
