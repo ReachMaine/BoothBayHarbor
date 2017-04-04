@@ -25,10 +25,6 @@ h1, .document-title h1 {
     font-size: 3em;
     font-weight: 500;
 }
-.inventor-cover-title h1{
-        font-weight: 600;
-        text-shadow: 2px 2px 1px rgba(25, 22, 22, 0.4);
-}
 
 h2,.post-detail h2{
     font-size: 2.6em;
@@ -55,4 +51,25 @@ p {
     margin-top: 0px;
 }
 
+.bbh-border-wide.panel-widget-style {
+    border-width: 3px!important;
+}
+
+.bbh-bkg-navy {
+    background-color: $bbh-navy;
+}
+.btn-primary, .button,
+input[type=submit],
+button,
+.fileinput-upload-button,
+.listing-create, .listing-detail-gallery-preview .owl-next,
+.listing-detail-gallery-preview .owl-prev,
+.listings-slider-item-info-more a,
+.coupon-detail-gallery-preview .owl-next,
+.coupon-detail-gallery-preview .owl-prev,
+.inventor-slider-item-info-button a,
+.btn-create-collection
+.button {
+    background-color: $bbh-turq;
+}
 /*** end settings ***/
