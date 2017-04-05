@@ -30,8 +30,13 @@ License URI: http://www.gnu.org/licenses/gpl.html
         }
     }
 }
+// header navigation
 .header-navigation .nav > li > a {
-    color: white;
+    .sow-icon-ionicons,
+    .sow-icon-fontawesome,
+    .sow-icon-icomoon {
+        padding-right: 5px;
+    }
 }
 // header top widget area
 .bbh-memsearch-short.widget_inventor_cover {
@@ -39,23 +44,34 @@ License URI: http://www.gnu.org/licenses/gpl.html
         height: 200px;
     }
 }
-// slideshow in header-top
+// slideshow in header-top (homepage)
+.widget_inventor_slider{
+    .inventor-slider-list {
+        .owl-item {
+            .inventor-slider-item.alignment-center  {
+                .inventor-slider-item-image {
+                    background-position: center top!important;;
+                }
+            }
+        }
+    }
 
-.inventor-slider-list.navigation-arrows {
-    .owl-controls {
-        .owl-prev, .owl-next, .owl-prev:hover, .owl-next:hover {
-            background-color: transparent!important;
-            box-shadow: none;
-            -webkit-box-shadow: none;
-            //color: white;
-        }
-        .owl-prev:before, .owl-next:before  {
-            color: rgba(255, 255, 255, .60) !important;
-        }
-        .owl-dots {
-            display: none!important;
-        }
-    } // end owl-controls
+    .inventor-slider-list.navigation-arrows {
+        .owl-controls {
+            .owl-prev, .owl-next, .owl-prev:hover, .owl-next:hover {
+                background-color: transparent!important;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                //color: white;
+            }
+            .owl-prev:before, .owl-next:before  {
+                color: rgba(255, 255, 255, .60) !important;
+            }
+            .owl-dots {
+                display: none!important;
+            }
+        } // end owl-controls
+    }
 }
 // content
 

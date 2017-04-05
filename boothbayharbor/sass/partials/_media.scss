@@ -14,8 +14,9 @@
 
     .header-navigation .nav > li > a {
         color: white;
+        font-size: 1.2em;
     }
     .header-navigation .nav > li.current-menu-item > a {
-        color: $bbh-orange; 
+        color: $bbh-orange;
     }
 }

@@ -110,19 +110,23 @@ button,
   .page-wrapper .header .header-wrapper .header-logo img {
     max-height: initial; }
 
-.header-navigation .nav > li > a {
-  color: white; }
+.header-navigation .nav > li > a .sow-icon-ionicons,
+.header-navigation .nav > li > a .sow-icon-fontawesome,
+.header-navigation .nav > li > a .sow-icon-icomoon {
+  padding-right: 5px; }
 
 .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
   height: 200px; }
 
-.inventor-slider-list.navigation-arrows .owl-controls .owl-prev, .inventor-slider-list.navigation-arrows .owl-controls .owl-next, .inventor-slider-list.navigation-arrows .owl-controls .owl-prev:hover, .inventor-slider-list.navigation-arrows .owl-controls .owl-next:hover {
+.widget_inventor_slider .inventor-slider-list .owl-item .inventor-slider-item.alignment-center .inventor-slider-item-image {
+  background-position: center top !important; }
+.widget_inventor_slider .inventor-slider-list.navigation-arrows .owl-controls .owl-prev, .widget_inventor_slider .inventor-slider-list.navigation-arrows .owl-controls .owl-next, .widget_inventor_slider .inventor-slider-list.navigation-arrows .owl-controls .owl-prev:hover, .widget_inventor_slider .inventor-slider-list.navigation-arrows .owl-controls .owl-next:hover {
   background-color: transparent !important;
   box-shadow: none;
   -webkit-box-shadow: none; }
-.inventor-slider-list.navigation-arrows .owl-controls .owl-prev:before, .inventor-slider-list.navigation-arrows .owl-controls .owl-next:before {
+.widget_inventor_slider .inventor-slider-list.navigation-arrows .owl-controls .owl-prev:before, .widget_inventor_slider .inventor-slider-list.navigation-arrows .owl-controls .owl-next:before {
   color: rgba(255, 255, 255, 0.6) !important; }
-.inventor-slider-list.navigation-arrows .owl-controls .owl-dots {
+.widget_inventor_slider .inventor-slider-list.navigation-arrows .owl-controls .owl-dots {
   display: none !important; }
 
 .post-detail .post-content a {
@@ -143,7 +147,8 @@ button,
     height: inherit; }
 
   .header-navigation .nav > li > a {
-    color: white; }
+    color: white;
+    font-size: 1.2em; }
 
   .header-navigation .nav > li.current-menu-item > a {
     color: #e86c1f; } }
