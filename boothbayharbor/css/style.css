@@ -110,10 +110,17 @@ button,
   .page-wrapper .header .header-wrapper .header-logo img {
     max-height: initial; }
 
+.header-navigation .nav > li > a .inventor-poi,
 .header-navigation .nav > li > a .sow-icon-ionicons,
 .header-navigation .nav > li > a .sow-icon-fontawesome,
 .header-navigation .nav > li > a .sow-icon-icomoon {
   padding-right: 5px; }
+.header-navigation .nav > li > a .inventor-poi:before,
+.header-navigation .nav > li > a .sow-icon-ionicons:before,
+.header-navigation .nav > li > a .sow-icon-fontawesome:before,
+.header-navigation .nav > li > a .sow-icon-icomoon:before {
+  color: #64bfec;
+  font-size: 1.1em; }
 
 .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
   height: 200px; }

@@ -32,10 +32,18 @@ License URI: http://www.gnu.org/licenses/gpl.html
 }
 // header navigation
 .header-navigation .nav > li > a {
+    .inventor-poi,
     .sow-icon-ionicons,
     .sow-icon-fontawesome,
     .sow-icon-icomoon {
         padding-right: 5px;
+    }
+    .inventor-poi:before,
+    .sow-icon-ionicons:before,
+    .sow-icon-fontawesome:before,
+    .sow-icon-icomoon:before {
+        color: $bbh-lighter-blue;
+        font-size: 1.1em;
     }
 }
 // header top widget area
