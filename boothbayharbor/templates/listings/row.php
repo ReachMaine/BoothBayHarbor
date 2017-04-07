@@ -44,7 +44,7 @@
         </div><!-- /.listing-row-content -->
     </div><!-- /.listing-row-body -->
 
-    <div class="listing-row-properties">
+    <?php /* zout <div class="listing-row-properties">
         <dl>
             <?php $price = Inventor_Price::get_price( get_the_ID() ); ?>
             <?php if ( ! empty( $price ) ) : ?>
@@ -60,5 +60,5 @@
 
             <?php do_action( 'inventor_listing_content', get_the_ID(), 'row' ); ?>
         </dl>
-    </div><!-- /.listing-row-properties -->
+    </div><!-- /.listing-row-properties --> */ ?>
 </div><!-- /.listing-row -->
