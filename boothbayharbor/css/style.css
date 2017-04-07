@@ -7,8 +7,6 @@ License: GNU General Public License
 License URI: http://www.gnu.org/licenses/gpl.html
 */
 /***  Colors ---------------------------------------------- */
-/* Typography ------------------------------------------ */
-/* General */
 /*** end colors ****/
 /*** settings ***/
 .center {
@@ -82,7 +80,10 @@ p {
   border-width: 3px !important; }
 
 .bbh-bkg-navy {
-  background-color: #003e52; }
+  background-color: #003E52; }
+
+.bbh-bkg-grey {
+  background-color: #425c65; }
 
 .btn-primary, .button,
 input[type=submit],
@@ -96,29 +97,52 @@ button,
 .inventor-slider-item-info-button a,
 .btn-create-collection
 .button {
-  background-color: #0084c7; }
+  background-color: #0084C7; }
 
 /*** end settings ***/
 .header .header-bar {
-  background-color: #e86c1f; }
+  background-color: #E86C1F; }
   .header .header-bar .header-bar-left .sow-features-feature {
     padding-left: 0px;
     padding-right: 0px; }
+
+.header-sticky .header-wrapper.affix {
+  border-top-color: #044357; }
 
 .page-wrapper .header .header-wrapper {
   background-color: #044357; }
   .page-wrapper .header .header-wrapper .header-logo img {
     max-height: initial; }
 
-.header-navigation .nav > li > a .inventor-poi,
-.header-navigation .nav > li > a .sow-icon-ionicons,
-.header-navigation .nav > li > a .sow-icon-fontawesome,
-.header-navigation .nav > li > a .sow-icon-icomoon {
+.widget.widget_nav_menu #menu-main-types-menu li a {
+  color: white; }
+
+.bbh-menu-across ul.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: auto; }
+  .bbh-menu-across ul.menu li {
+    display: inline-block; }
+
+.bbh-menu-icons .nav > li > a .inventor-poi,
+.bbh-menu-icons .nav > li > a .sow-icon-ionicons,
+.bbh-menu-icons .nav > li > a .sow-icon-fontawesome,
+.bbh-menu-icons .nav > li > a .sow-icon-icomoon,
+.bbh-menu-icons .menu > li > a .inventor-poi,
+.bbh-menu-icons .menu > li > a .sow-icon-ionicons,
+.bbh-menu-icons .menu > li > a .sow-icon-fontawesome,
+.bbh-menu-icons .menu > li > a .sow-icon-icomoon {
   padding-right: 5px; }
-.header-navigation .nav > li > a .inventor-poi:before,
-.header-navigation .nav > li > a .sow-icon-ionicons:before,
-.header-navigation .nav > li > a .sow-icon-fontawesome:before,
-.header-navigation .nav > li > a .sow-icon-icomoon:before {
+.bbh-menu-icons .nav > li > a .inventor-poi:before,
+.bbh-menu-icons .nav > li > a .sow-icon-ionicons:before,
+.bbh-menu-icons .nav > li > a .sow-icon-fontawesome:before,
+.bbh-menu-icons .nav > li > a .sow-icon-icomoon:before,
+.bbh-menu-icons .menu > li > a .inventor-poi:before,
+.bbh-menu-icons .menu > li > a .sow-icon-ionicons:before,
+.bbh-menu-icons .menu > li > a .sow-icon-fontawesome:before,
+.bbh-menu-icons .menu > li > a .sow-icon-icomoon:before {
   color: #64bfec;
   font-size: 1.1em; }
 
@@ -139,8 +163,18 @@ button,
 .post-detail .post-content a {
   border-bottom: 0px; }
 
+.listing-box-background:before {
+  background: none; }
+
+.listing-box:hover .listing-box-title {
+  background-color: #0084C7; }
+
+.listing-box-label-top {
+  background-color: #003E52; }
+
 .footer-top {
-  background-color: #003e52; }
+  margin-top: 40px;
+  background-color: #003E52; }
   .footer-top .footer-area {
     padding-top: 30px; }
 
@@ -155,7 +189,11 @@ button,
 
   .header-navigation .nav > li > a {
     color: white;
-    font-size: 1.2em; }
+    font-size: 1.0em; }
 
   .header-navigation .nav > li.current-menu-item > a {
-    color: #e86c1f; } }
+    color: #E86C1F; } }
+@media (max-width: 767px) {
+  .bbh-menu-across ul.menu li {
+    display: block;
+    text-align: center; } }

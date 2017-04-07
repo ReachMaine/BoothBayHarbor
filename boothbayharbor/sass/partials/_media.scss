@@ -7,16 +7,32 @@
         width: 50%;
     }
 }
-@media (min-width:768px) {
+@media (min-width:768px) { // tablet & desktop
     .header-sticky .header-wrapper.affix {
         height: inherit;
     }
 
     .header-navigation .nav > li > a {
         color: white;
-        font-size: 1.2em;
+        font-size: 1.0em;
     }
     .header-navigation .nav > li.current-menu-item > a {
         color: $bbh-orange;
     }
 }
+ @media (max-width: 767px) { // mobile
+   .bbh-menu-across ul.menu li {
+      display: block;
+      text-align: center;
+   }
+ }
+
+ @media (max-width: 519px) { // smaller mobile
+   .bbh-menu-across {
+     ul.menu {
+       li {
+        //  max-width: 400px;
+       }
+     }
+   }
+ }

@@ -21,6 +21,9 @@ License URI: http://www.gnu.org/licenses/gpl.html
         }
     }
 }
+.header-sticky .header-wrapper.affix {
+  border-top-color: $header-bkg;
+}
 // header
 .page-wrapper {
     .header .header-wrapper {
@@ -30,8 +33,30 @@ License URI: http://www.gnu.org/licenses/gpl.html
         }
     }
 }
+//.widget.widget_nav_menu ul li a,
+.widget.widget_nav_menu {
+  #menu-main-types-menu { // ul
+    li a {
+        color: white;
+    }
+  }
+}
+
+.bbh-menu-across {
+  ul.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: auto;
+    li {
+      display: inline-block;
+    }
+  }
+}
 // header navigation
-.header-navigation .nav > li > a {
+.bbh-menu-icons .nav > li > a,
+.bbh-menu-icons .menu > li > a  {
     .inventor-poi,
     .sow-icon-ionicons,
     .sow-icon-fontawesome,
@@ -86,8 +111,20 @@ License URI: http://www.gnu.org/licenses/gpl.html
 .post-detail .post-content a  {
     border-bottom: 0px; // take off line under a tags
 }
+// listing box used  as featured image on home page....
+.listing-box-background:before {
+  background: none;
+}
+.listing-box:hover .listing-box-title {
+  background-color: $bbh-turq;
+}
+.listing-box-label-top {
+  background-color: $bbh-navy;
+}
 
+//**** footer
 .footer-top  {
+    margin-top: 40px;
     background-color: $footer-bkg;
     .footer-area {
         padding-top: 30px;
