@@ -9,7 +9,7 @@
     <?php $image = $thumbnail[0]; ?>
 <?php else: ?>
     <?php /* $image = esc_attr( plugins_url( 'inventor' ) ) . '/assets/img/default-item.png'; */
-    $image = get_stylesheet_directory_uri().'/images/default-item.png'; ?>
+    $image = get_stylesheet_directory_uri().'/images/default-item.jpg'; ?>
 
 <?php endif; ?>
 

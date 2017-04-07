@@ -170,7 +170,9 @@ button,
   background-color: #0084C7; }
 
 .listing-box-label-top {
-  background-color: #003E52; }
+  background-color: #003E52;
+  width: 100%;
+  text-align: center; }
 
 .footer-top {
   margin-top: 40px;
