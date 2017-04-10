@@ -43,7 +43,7 @@
     <div class="listing-row-body">
         <h2 class="listing-row-title"><a href="<?php the_permalink(); ?>"><?php echo Inventor_Utilities::excerpt( get_the_title(), 50 ); ?></a></h2>
         <div class="listing-row-content">
-            <?php the_excerpt(); ?>
+            <?php /* the_excerpt(); */ ?>
             <?php
                 $phone = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'phone', true );
                 $address = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'address', true );
@@ -64,9 +64,9 @@
                   echo '</div> <!-- listing-detail-contact-->';
                 }
            ?>
-           <?php /* <p>
-               <a class="read-more-link" href="<?php echo esc_attr( get_permalink( get_the_ID() ) ); ?>"><?php echo esc_attr__( 'Read More', 'inventor' ); ?><i class="fa fa-chevron-right"></i></a>
-           </p> */ ?>
+           <p>
+               <a class="read-more-link" href="<?php echo esc_attr( get_permalink( get_the_ID() ) ); ?>"><?php echo esc_attr__( 'More Details', 'inventor' ); ?><i class="fa fa-chevron-right"></i></a>
+           </p>
         </div><!-- /.listing-row-content -->
     </div><!-- /.listing-row-body -->
 
