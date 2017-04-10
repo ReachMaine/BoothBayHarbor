@@ -102,6 +102,10 @@ button,
 .button {
   background-color: #0084C7; }
 
+.widget-pb,
+.widget .widget-pb {
+  padding-bottom: 30px; }
+
 /*** end settings ***/
 .header .header-bar {
   background-color: #E86C1F; }

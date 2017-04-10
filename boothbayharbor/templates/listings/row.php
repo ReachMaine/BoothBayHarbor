@@ -25,9 +25,9 @@
             <?php /*  do_action( 'inventor_listing_actions', get_the_ID(), 'row' ); */ ?>
         </div><!-- /.listing-row-actions -->
 
-        <?php if ( $featured ) : ?>
+        <?php /* if ( $featured ) : ?>
             <div class="listing-row-label-top listing-row-label-top-left"><?php echo esc_attr__( 'Featured', 'inventor' ); ?></div><!-- /.listing-row-label-top-left -->
-        <?php endif; ?>
+        <?php endif; */ ?>
 
         <?php if ( $reduced ) : ?>
             <div class="listing-row-label-top listing-row-label-top-right"><?php echo esc_attr__( 'Reduced', 'inventor' ); ?></div><!-- /.listing-row-label-top-right -->
