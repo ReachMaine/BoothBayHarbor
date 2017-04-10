@@ -7,6 +7,9 @@ License: GNU General Public License
 License URI: http://www.gnu.org/licenses/gpl.html
 */
 /***  Colors ---------------------------------------------- */
+.map-switch {
+  background-color: #0084c7; }
+
 /*** end colors ****/
 /*** settings ***/
 .center {
@@ -160,6 +163,9 @@ button,
 .widget_inventor_slider .inventor-slider-list.navigation-arrows .owl-controls .owl-dots {
   display: none !important; }
 
+.inventor-cover-filter form {
+  margin-top: 0px; }
+
 /**** content ****/
 .post-detail .post-content a {
   border-bottom: 0px; }
@@ -222,9 +228,13 @@ h1.detail-title {
   background-image: none; }
 
 .listing-row-image {
-  height: 100px;
-  width: 25%;
-  background-position: center top; }
+  width: 25%; }
+  .listing-row-image img {
+    width: 100px;
+    height: 100px; }
+
+.listing-row.featured {
+  margin: -1px; }
 
 .archive.tax-listing_categories .list-container:nth-child(2n+1):after,
 .post-type-archive .list-container:nth-child(2n+1):after {

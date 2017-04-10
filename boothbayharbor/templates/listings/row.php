@@ -9,7 +9,7 @@
 <?php $reduced = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'reduced', true ); ?>
 
 <?php if ( has_post_thumbnail() ) : ?>
-    <?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium' ); ?>
+    <?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' ); ?>
     <?php $image = $thumbnail[0]; ?>
 <?php else: ?>
     <?php $image = get_stylesheet_directory_uri().'/images/default-item.jpg'; /* zig changed default image */ ?>
@@ -18,8 +18,8 @@
 <?php $image = apply_filters( 'inventor_listing_featured_image', $image, get_the_ID() ); ?>
 
 <div class="listing-row <?php if ( $featured ) : ?>featured<?php endif; ?>">
-    <div class="listing-row-image" style="background-image: url('<?php echo esc_attr( $image ); ?>');">
-        <a href="<?php the_permalink() ?>" class="listing-row-image-link"></a>
+    <div class="listing-row-image" >
+        <a href="<?php the_permalink() ?>" class="listing-row-image-link"><img src="<?php echo esc_attr( $image ); ?>"></a>
 
         <div class="listing-row-actions">
             <?php /*  do_action( 'inventor_listing_actions', get_the_ID(), 'row' ); */ ?>
