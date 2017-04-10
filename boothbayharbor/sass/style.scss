@@ -106,7 +106,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
         } // end owl-controls
     }
 }
-// content
+/**** content ****/
 
 .post-detail .post-content a  {
     border-bottom: 0px; // take off line under a tags
@@ -123,7 +123,32 @@ License URI: http://www.gnu.org/licenses/gpl.html
   width: 100%;
   text-align: center;
 }
-
+/**** archive ****/
+.listing-row-image:before {
+  background-image: none;
+}
+.listing-row-image {
+  height: 100px;
+  width: 25%;
+  background-position: center top;
+}
+.post-type-archive {
+  .list-container:nth-child(2n+1):after {
+    clear: both;
+  }
+  .listing-container {
+    width: 50%;
+    .listing-row-body {
+      padding: 20px;
+      .bbh-listing-detail-contact {
+        ul {
+          list-style: none;
+          padding-left: 0px;
+        }
+      }
+    }
+  } // listing container
+}
 
 //**** footer
 .footer-top  {

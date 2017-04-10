@@ -1,3 +1,10 @@
+<?php /*archive listing when in row
+*  mods:
+* 10Apr17 - remove hover actions
+          - add addres & phone.
+ */ ?>
+
+
 <?php $featured = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'featured', true ); ?>
 <?php $reduced = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'reduced', true ); ?>
 
@@ -15,7 +22,7 @@
         <a href="<?php the_permalink() ?>" class="listing-row-image-link"></a>
 
         <div class="listing-row-actions">
-            <?php do_action( 'inventor_listing_actions', get_the_ID(), 'row' ); ?>
+            <?php /*  do_action( 'inventor_listing_actions', get_the_ID(), 'row' ); */ ?>
         </div><!-- /.listing-row-actions -->
 
         <?php if ( $featured ) : ?>
@@ -37,10 +44,29 @@
         <h2 class="listing-row-title"><a href="<?php the_permalink(); ?>"><?php echo Inventor_Utilities::excerpt( get_the_title(), 50 ); ?></a></h2>
         <div class="listing-row-content">
             <?php the_excerpt(); ?>
-
-            <p>
-                <a class="read-more-link" href="<?php echo esc_attr( get_permalink( get_the_ID() ) ); ?>"><?php echo esc_attr__( 'Read More', 'inventor' ); ?><i class="fa fa-chevron-right"></i></a>
-            </p>
+            <?php
+                $phone = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'phone', true );
+                $address = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'address', true );
+                if ( ! empty( $phone ) ||  ! empty( $address ) )  {
+                  echo ' <div class="bbh-listing-detail-contact">';
+                    echo '<ul>';
+                    if ( ! empty( $address  ) ) {
+                       echo '<li class="address">';
+                        echo wp_kses( nl2br( $address ), wp_kses_allowed_html( 'post' ) );
+                       echo '</li>';
+                    }
+                      if ( ! empty( $phone ) ) {
+                         echo '<li class="phone">';
+                          echo '<a href="tel:'.wp_kses( str_replace(' ', '', $phone), wp_kses_allowed_html( 'post' ) ).'">'.wp_kses( $phone, wp_kses_allowed_html( 'post' ) ).'</a>';
+                         echo '</li>';
+                      }
+                    echo '</ul>';
+                  echo '</div> <!-- listing-detail-contact-->';
+                }
+           ?>
+           <?php /* <p>
+               <a class="read-more-link" href="<?php echo esc_attr( get_permalink( get_the_ID() ) ); ?>"><?php echo esc_attr__( 'Read More', 'inventor' ); ?><i class="fa fa-chevron-right"></i></a>
+           </p> */ ?>
         </div><!-- /.listing-row-content -->
     </div><!-- /.listing-row-body -->
 

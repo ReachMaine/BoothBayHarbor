@@ -160,6 +160,7 @@ button,
 .widget_inventor_slider .inventor-slider-list.navigation-arrows .owl-controls .owl-dots {
   display: none !important; }
 
+/**** content ****/
 .post-detail .post-content a {
   border-bottom: 0px; }
 
@@ -173,6 +174,25 @@ button,
   background-color: #003E52;
   width: 100%;
   text-align: center; }
+
+/**** archive ****/
+.listing-row-image:before {
+  background-image: none; }
+
+.listing-row-image {
+  height: 100px;
+  width: 25%;
+  background-position: center top; }
+
+.post-type-archive .list-container:nth-child(2n+1):after {
+  clear: both; }
+.post-type-archive .listing-container {
+  width: 50%; }
+  .post-type-archive .listing-container .listing-row-body {
+    padding: 20px; }
+    .post-type-archive .listing-container .listing-row-body .bbh-listing-detail-contact ul {
+      list-style: none;
+      padding-left: 0px; }
 
 .footer-top {
   margin-top: 40px;
