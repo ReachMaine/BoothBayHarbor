@@ -19,6 +19,20 @@
 			</h4>
 	<?php endif; ?>
 
+    <?php /* maps vars */ ?>
+		<?php $map_latitude = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'map_location_latitude', true );?>
+		<?php $map_longitude = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'map_location_longitude', true );?>
+		<?php $map_polygon = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'map_location_polygon', true );?>
+		<?php $map_location_address = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'map_location_address', true );?>
+		<?php $map_type = get_theme_mod( 'inventor_general_listing_map_type', 'ROADMAP' );?>
+		<?php $map = ! empty( $map_latitude ) || ! empty ( $map_longitude ); ?>
+
+    <?php if ( class_exists( 'Inventor_Google_Map' ) && ( ! empty ( $map ) || ! empty ( $street_view ) ) ) { $two_cols = true;  }  else {$two_cols = false; }?>
+		<?php if ($two_cols) { ?>
+			<div class="row">
+					 <div class="col-md-6">
+		<?php } ?>
+
 
 	<?php /* vars for contact */ ?>
 	<?php $email = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'email', true ); ?>
@@ -26,13 +40,6 @@
 	<?php $phone = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'phone', true ); ?>
 	<?php $person = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'person', true ); ?>
 	<?php $address = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'address', true ); ?>
-
-	<?php 	$two_cols = true; ?>
-	<?php if ($two_cols) { ?>
-		<div class="row">
-				 <div class="col-md-6">
-	<?php } ?>
-
  <?php if ( ! empty( $phone ) || ! empty( $person ) || ! empty( $address ) ) {?>
 	<div class="listing-detail-contact">
 			<ul>
@@ -120,17 +127,11 @@ foreach( $social_networks as $key => $title ) {
 			</div><!-- /.col-* -->
 			<div class="col-md-6">
 <?php } ?>
-<?php /* maps vars */ ?>
-	<?php $map_latitude = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'map_location_latitude', true );?>
-	<?php $map_longitude = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'map_location_longitude', true );?>
-	<?php $map_polygon = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'map_location_polygon', true );?>
-	<?php $map_location_address = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'map_location_address', true );?>
-	<?php $map_type = get_theme_mod( 'inventor_general_listing_map_type', 'ROADMAP' );?>
-	<?php $map = ! empty( $map_latitude ) || ! empty ( $map_longitude ); ?>
 
 	<?php $street_view = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'street_view', true );?>
 	<?php $inside_view = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'inside_view', true );?>
-<div class="listing-detail-section"  id="listing-detail-section-location">
+	<?php if ( class_exists( 'Inventor_Google_Map' ) && ( ! empty ( $map ) || ! empty ( $street_view ) ) ) { ?>
+		<div class="listing-detail-section"  id="listing-detail-section-location">
 			<div class="listing-detail-location-wrapper">
 				<!-- Nav tabs -->
 				<ul id="listing-detail-location" class="nav nav-tabs" role="tablist">
@@ -227,6 +228,7 @@ foreach( $social_networks as $key => $title ) {
 				</div>
 		</div>
 </div><!-- /.listing-detail-section -->
+<?php } ?>
 <?php if ($two_cols) { ?>
 			</div><!-- /.col-* -->
 		</div><!-- /.row -->
