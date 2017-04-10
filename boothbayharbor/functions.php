@@ -5,3 +5,34 @@
  * @package Superlist Child
  * @since Superlist Child 1.0.0
  */
+
+// trying to remove buildin sections we dont want. - not working yet.
+ add_action( 'cmb2_init', 'remove_metabox', 11 );
+  function remove_metabox() {
+     Inventor_Post_Types::remove_metabox( 'dine', array(
+         'listing_opening_hours',
+     ) );
+     Inventor_Post_Types::remove_metabox( 'food', array(
+         'listing_opening_hours',
+     ) );
+ }
+
+// put video at top & gallery down lower.
+ add_filter( 'inventor_listing_detail_sections', 'custom_sections_order', 10, 2 );
+
+ function custom_sections_order( $sections, $post_type ) {
+         return array(
+                 'video' => esc_attr__( 'Video', 'inventor' ),
+                 'description' => esc_attr__( 'Description', 'inventor' ),
+                 'overview' => esc_attr__( 'Details', 'inventor' ),
+                 'gallery' => esc_attr__( 'Gallery', 'inventor' ),
+                 'food-menu' => esc_attr__( 'Meals And Drinks', 'inventor' ),
+                 'opening-hours' => esc_attr__( 'Opening Hours', 'inventor' ),
+                 'location' => esc_attr__( 'Location', 'inventor' ),
+                 'contact' => esc_attr__( 'Contact', 'inventor' ),
+                 'social' => esc_attr__( 'Social', 'inventor' ),
+                 'faq' => esc_attr__( 'FAQ', 'inventor' ),
+                 'comments' => null,
+                 'report' => null
+         );
+ }
