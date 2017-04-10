@@ -34,7 +34,7 @@
 
     <?php if ( class_exists( 'Inventor_Post_Types' ) ) : ?>
         <?php $post_types = Inventor_Post_Types::get_listing_post_types(); ?>
-        <?php if ( is_singular( $post_types ) ) : ?>
+        <?php /* zout if ( is_singular( $post_types ) ) : ?>
             <?php get_template_part( 'templates/content-listing-banner' ); ?>
 
             <div class="listing-detail-menu-wrapper">
@@ -44,7 +44,7 @@
                     </div><!-- /.container -->
                 </div><!-- /.listing-detail-menu -->
             </div><!-- /.listing-detail-menu-wrapper -->
-        <?php endif; ?>
+        <?php endif; */ ?>
     <?php endif; ?>
 
     <div class="main">

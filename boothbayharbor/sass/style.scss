@@ -123,6 +123,54 @@ License URI: http://www.gnu.org/licenses/gpl.html
   width: 100%;
   text-align: center;
 }
+/*****  listing single *****/
+.listing-detail {
+  background-color: white;
+}
+.detail-banner-info {
+  padding-left: 5px;
+}
+h1.detail-title {
+   padding-left: 5px;
+   img.listing-title-logo {
+    max-width: 100px;
+  }
+}
+.listing-detail-contact {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+   ul li {
+     line-height: 30px;
+   }
+}
+#listing-detail-section-location {
+  margin-bottom: 0px;
+}
+.listing-detail-location-wrapper {
+  padding: 0px;
+}
+
+.listing-detail-section-content-wrapper,
+.listing-detail-gallery-wrapper,
+.listing-detail-section-generic
+.listing-detail-section-content-wrapper,
+.listing-detail-description-wrapper,
+.listing-detail-attributes,
+.listing-detail-contact,
+.listing-detail-section-faq-list {
+  box-shadow: none;
+}
+
+// color on single listing
+#listing-detail-location li.active a,
+#listing-detail-location li.directions a {
+    background-color: $bbh-light-blue;
+}
+#listing-detail-section-description,
+#listing-detail-section-attributes {
+  margin-bottom: 0px;
+}
+
 /**** archive ****/
 .listing-row-image:before {
   background-image: none;
@@ -132,6 +180,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
   width: 25%;
   background-position: center top;
 }
+.archive.tax-listing_categories,
 .post-type-archive {
   .list-container:nth-child(2n+1):after {
     clear: both;
