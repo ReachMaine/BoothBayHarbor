@@ -155,6 +155,8 @@ button,
 
 .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
   height: 200px; }
+.bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
+  font-size: 3em; }
 
 .widget_inventor_slider .inventor-slider-list .owl-item .inventor-slider-item.alignment-center .inventor-slider-item-image {
   background-position: center top !important; }
