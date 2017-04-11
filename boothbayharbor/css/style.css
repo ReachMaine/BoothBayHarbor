@@ -186,8 +186,6 @@ p#slider_1_mebox_subtitle {
   color: #64bfec;
   font-size: 1.1em; }
 
-.bbh-memsearch-short.widget_inventor_cover .inventor-cover {
-  height: 200px; }
 .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
   font-size: 3em; }
 
@@ -302,11 +300,17 @@ h1.detail-title {
 /* end Media Settings ------------------------------------------ */
 @media (min-width: 992px) {
   .inventor-cover-filter .form-group {
-    width: 50%; } }
+    width: 50%; }
+
+  .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
+    height: 200px; } }
 @media (max-width: 991px) {
   .header-bar-left .sow-features-list {
     margin-left: 0px;
-    margin-right: 0px; } }
+    margin-right: 0px; }
+
+  .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
+    height: 300px; } }
 @media (min-width: 768px) {
   .header-sticky .header-wrapper.affix {
     height: inherit; }

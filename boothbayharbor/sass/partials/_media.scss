@@ -6,15 +6,26 @@
     .inventor-cover-filter .form-group  {
         width: 50%;
     }
+    .bbh-memsearch-short.widget_inventor_cover {
+        .inventor-cover {
+          height: 200px;
+        }
+      }
 }
 
 @media (max-width: 991px) {
- .header-bar-left {
+ .header-bar-left { // topbar social icons
     .sow-features-list {
       margin-left: 0px;
       margin-right: 0px;
     }
   }
+
+  .bbh-memsearch-short.widget_inventor_cover { // homepage search form
+      .inventor-cover {
+        height: 300px;
+      }
+    }
 }
 
 @media (min-width:768px) { // tablet & desktop
