@@ -5,6 +5,7 @@
  * @package Superlist Child
  * @since Superlist Child 1.0.0
  */
+require_once(get_stylesheet_directory().'/custom/custom.php');
 
 // trying to remove buildin sections we dont want. - not working yet.
  add_action( 'cmb2_init', 'remove_metabox', 11 );
@@ -36,3 +37,18 @@
                  'report' => null
          );
  }
+
+
+ /* add_filter( 'get_the_archive_title', function ($title) {
+
+     if ( is_category() ) {
+             $title = single_cat_title( '', false );
+         } elseif ( is_tag() ) {
+             $title = single_tag_title( '', false );
+         } elseif ( is_author() ) {
+              $title =  get_the_author() ;
+         }
+
+     return $title;
+
+ }); */
