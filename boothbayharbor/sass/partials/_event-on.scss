@@ -1,6 +1,7 @@
 // Styling for anything for the Event On calendar
 
 //HOMEPAGE
+
 .eo_card_box > div:nth-child(1) {
   display: none; //hide photos on upcoming events on homepage
 }
@@ -20,6 +21,20 @@ p#slider_1_mebox_subtitle {
     background-color: inherit !important;
     span {
       max-height: 49px !important; //fills the "meta box" space from above with more of the event title
+      font-size: 12px !important;
+      line-height: 17px !important;
     }
+  }
+}
+
+.eo_card_box {
+  .eo_card_main_date {
+    border-left-color: #E86C1F !important; //left border on date orange
+  }
+  i {
+    color: #E86C1F !important; //icons orange
+  }
+  .eo_card_sotitle {
+    text-transform: capitalize; //capitalize month in dates
   }
 }
