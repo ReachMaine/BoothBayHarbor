@@ -9,6 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 @import "partials/colors";
 @import "partials/settings";
+@import "partials/event-on";
 
 // topbar
 .header .header-bar {
@@ -20,7 +21,14 @@ License URI: http://www.gnu.org/licenses/gpl.html
             padding-right: 0px;
         }
     }
+    .header-bar-right {
+      margin-top: 3px;
+    }
+    .header-bar-inner .widget .menu li a {
+      font-size: 18px; // font-size for top bar
+    }
 }
+
 .header-sticky .header-wrapper.affix {
   border-top-color: $header-bkg;
 }
@@ -40,6 +48,10 @@ License URI: http://www.gnu.org/licenses/gpl.html
         color: white;
     }
   }
+}
+
+.header-navigation .nav > li > a:hover, .header-navigation .footer-top .widget.widget_nav_menu ul > li > a:hover, .footer-top .widget.widget_nav_menu .header-navigation ul > li > a:hover, .header-navigation .footer-bottom .widget.widget_nav_menu ul > li > a:hover, .footer-bottom .widget.widget_nav_menu .header-navigation ul > li > a:hover {
+  color: $bbh-orange;
 }
 
 .bbh-menu-across {

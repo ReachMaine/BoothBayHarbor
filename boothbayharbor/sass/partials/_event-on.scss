@@ -1,0 +1,25 @@
+// Styling for anything for the Event On calendar
+
+//HOMEPAGE
+.eo_card_box > div:nth-child(1) {
+  display: none; //hide photos on upcoming events on homepage
+}
+
+.eo_card_title_boxContainer {
+  margin-top: 35px; //Moving down calendar info boxes after removing images
+}
+
+p#slider_1_mebox_subtitle {
+  display: none; //hide the "meta box" that can hold extra information on the homepage upcoming events.
+}
+
+.eo_card_title {
+  background-color: #003e52;
+  div {
+    color: white !important;
+    background-color: inherit !important;
+    span {
+      max-height: 49px !important; //fills the "meta box" space from above with more of the event title
+    }
+  }
+}
