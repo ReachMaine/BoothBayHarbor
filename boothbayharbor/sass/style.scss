@@ -36,6 +36,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 .page-wrapper {
     .header .header-wrapper {
         background-color: $header-bkg;
+        box-shadow: 0px 2px 3px #002733;
         .header-logo img {
             max-height: initial;
         }
@@ -44,14 +45,21 @@ License URI: http://www.gnu.org/licenses/gpl.html
 //.widget.widget_nav_menu ul li a,
 .widget.widget_nav_menu {
   #menu-main-types-menu { // ul
-    li a {
+    li {
+      font-size: 22px;
+      a {
         color: white;
+      }
     }
   }
 }
 
 .header-navigation .nav > li > a:hover, .header-navigation .footer-top .widget.widget_nav_menu ul > li > a:hover, .footer-top .widget.widget_nav_menu .header-navigation ul > li > a:hover, .header-navigation .footer-bottom .widget.widget_nav_menu ul > li > a:hover, .footer-bottom .widget.widget_nav_menu .header-navigation ul > li > a:hover {
   color: $bbh-orange;
+}
+
+.widget.widget_archive ul li a:hover, .widget.widget_categories ul li a:hover, .widget.widget_pages ul li a:hover, .widget.widget_nav_menu ul li a:hover, .widget.widget_recent_entries ul li a:hover, .widget.widget_meta ul li a:hover {
+  padding-left: 0px;
 }
 
 .bbh-menu-across {
@@ -199,7 +207,7 @@ h1.detail-title {
   background-image: none;
 }
 .listing-row-image {
-  //height: 100px;
+  height: 175px;
   width: 25%;
   img {
     width: 100px;
@@ -207,6 +215,15 @@ h1.detail-title {
   }
   //background-position: center top;
 }
+
+.post-detail .listing-row-title, .listing-row-title { //tighten space below listing title
+  margin: 0 0 5px 0;
+}
+
+.read-more-link {
+  margin-top: -5px;
+}
+
 .listing-row.featured {
   margin: -1px;
 }

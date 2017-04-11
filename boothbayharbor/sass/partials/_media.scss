@@ -2,6 +2,20 @@
 
 /* end Media Settings ------------------------------------------ */
 
+@media (min-width: 1200px) {
+  .archive .filter-form {
+    .petfriendly {
+      width: 15% !important;
+    }
+    .yearround {
+      width: 15% !important;
+    }
+    .form-group-button {
+      width: 20% !important;
+    }
+  }
+}
+
 @media (min-width: 992px) {
     .inventor-cover-filter .form-group  {
         width: 50%;
