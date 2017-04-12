@@ -5,7 +5,8 @@
  * @package Superlist Child
  * @since Superlist Child 1.0.0
  */
-require_once(get_stylesheet_directory().'/custom/custom.php');
+require_once(get_stylesheet_directory().'/custom/custom.php'); // custom shortcodes, etc
+require_once(get_stylesheet_directory().'/custom/branding.php'); // login screen
 
 // trying to remove buildin sections we dont want. - not working yet.
  add_action( 'cmb2_init', 'remove_metabox', 11 );
