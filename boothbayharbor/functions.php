@@ -8,15 +8,13 @@
 require_once(get_stylesheet_directory().'/custom/custom.php'); // custom shortcodes, etc
 require_once(get_stylesheet_directory().'/custom/branding.php'); // login screen
 
-// trying to remove buildin sections we dont want. - not working yet.
+// trying to remove buildin sections we dont want from food, since its a built in type.
  add_action( 'cmb2_init', 'remove_metabox', 11 );
   function remove_metabox() {
-     Inventor_Post_Types::remove_metabox( 'dine', array(
-         'listing_opening_hours',
+    Inventor_Post_Types::remove_metabox( 'food', array(
+         'price','opening_hours', 'details', 'banner',
      ) );
-     Inventor_Post_Types::remove_metabox( 'food', array(
-         'listing_opening_hours',
-     ) );
+
  }
 
 // put video at top & gallery down lower.
