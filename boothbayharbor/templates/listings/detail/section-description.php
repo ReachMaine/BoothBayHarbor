@@ -38,9 +38,8 @@
 	<?php $email = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'email', true ); ?>
 	<?php $website = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'website', true ); ?>
 	<?php $phone = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'phone', true ); ?>
-	<?php $person = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'person', true ); ?>
 	<?php $address = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'address', true ); ?>
- <?php if ( ! empty( $phone ) || ! empty( $person ) || ! empty( $address ) ) {?>
+ <?php if ( ! empty( $phone ) || ! empty( $address ) ) {?>
 	<div class="listing-detail-contact">
 			<ul>
 					<?php if ( ! empty( $address ) ): ?>
@@ -50,11 +49,6 @@
 					<?php if ( ! empty( $phone ) ): ?>
 							<li class="phone">
 									<a href="tel:<?php echo wp_kses( str_replace(' ', '', $phone), wp_kses_allowed_html( 'post' ) ); ?>"><?php echo wp_kses( $phone, wp_kses_allowed_html( 'post' ) ); ?></a>
-							</li>
-					<?php endif; ?>
-					<?php if ( ! empty( $person ) ): ?>
-							<li class="person">
-								   <?php echo wp_kses( $person, wp_kses_allowed_html( 'post' ) ); ?>
 							</li>
 					<?php endif; ?>
 			</ul>
