@@ -246,12 +246,21 @@ h1.detail-title {
   } // listing container
 }
 
-//**** footer
+//**** footer ****
 .footer-top  {
     margin-top: 40px;
     background-color: $footer-bkg;
     .footer-area {
         padding-top: 30px;
+    }
+    .widget.widget_nav_menu.bbh-menu-icons {
+      font-size: 1.2em;
+      .menu li a i {
+        background-color: transparent;
+        margin-right: 0px;
+        font-size: 1.25em;
+        width: inherit;
+      }
     }
 }
 @import "partials/media"; // keep at end of of file
