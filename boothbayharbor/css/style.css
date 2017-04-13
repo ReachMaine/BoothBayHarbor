@@ -339,6 +339,9 @@ h1.detail-title {
   .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
     height: 300px; } }
 @media (min-width: 768px) {
+  .hide-desktop {
+    display: none !important; }
+
   .header-sticky .header-wrapper.affix {
     height: inherit; }
 
@@ -364,6 +367,9 @@ h1.detail-title {
   .submenu-dark .header-navigation .nav > li .sub-menu:after, .submenu-dark .header-navigation .footer-top .widget.widget_nav_menu ul > li .sub-menu:after, .footer-top .widget.widget_nav_menu .submenu-dark .header-navigation ul > li .sub-menu:after, .submenu-dark .header-navigation .footer-bottom .widget.widget_nav_menu ul > li .sub-menu:after, .footer-bottom .widget.widget_nav_menu .submenu-dark .header-navigation ul > li .sub-menu:after {
     border-bottom-color: white; } }
 @media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important; }
+
   .bbh-menu-across ul.menu li {
     display: block;
     text-align: center; } }

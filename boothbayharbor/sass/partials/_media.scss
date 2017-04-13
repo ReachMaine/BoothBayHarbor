@@ -43,6 +43,9 @@
 }
 
 @media (min-width:768px) { // tablet & desktop
+    .hide-desktop {
+      display: none!important;
+    }
     .header-sticky .header-wrapper.affix {
         height: inherit;
     }
@@ -76,6 +79,9 @@
     }
 }
  @media (max-width: 767px) { // mobile
+   .hide-mobile {
+     display: none!important;
+   }
    .bbh-menu-across ul.menu li {
       display: block;
       text-align: center;
