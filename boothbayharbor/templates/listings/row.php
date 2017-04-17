@@ -2,15 +2,19 @@
 *  mods:
 * 10Apr17 - remove hover actions
           - add addres & phone.
+* 17Apr17 zig - use logo instead of featured image here (category archive)
  */ ?>
 
 
 <?php $featured = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'featured', true ); ?>
 <?php $reduced = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'reduced', true ); ?>
 
-<?php if ( has_post_thumbnail() ) : ?>
+<?php /* if ( has_post_thumbnail() ) : ?>
     <?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' ); ?>
-    <?php $image = $thumbnail[0]; ?>
+    <?php $image = $thumbnail[0]; ?> */
+    $logo = get_post_meta(  get_the_ID(), INVENTOR_LISTING_PREFIX . 'logo', true );
+    if ( ! empty( $logo ) ) :
+      $image = $logo; ?>
 <?php else: ?>
     <?php $image = get_stylesheet_directory_uri().'/images/default-item.jpg'; /* zig changed default image */ ?>
 <?php endif; ?>
