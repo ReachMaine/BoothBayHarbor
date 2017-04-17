@@ -270,11 +270,13 @@ h1.detail-title {
   margin-bottom: 0px; }
 
 /**** archive ****/
+.listings-row .listing-container:nth-child(2n+1) {
+  clear: both; }
+
 .listing-row-image:before {
   background-image: none; }
 
 .listing-row-image {
-  height: 175px;
   width: 25%; }
   .listing-row-image img {
     width: 100px;
@@ -325,6 +327,11 @@ h1.detail-title {
     width: 15% !important; }
   .archive .filter-form .form-group-button {
     width: 20% !important; } }
+@media (max-width: 1199px) {
+  .listing-row-image,
+  .listing-row-body,
+  .listing-row-properties {
+    display: table-cell; } }
 @media (min-width: 992px) {
   .inventor-cover-filter .form-group {
     width: 50%; }
@@ -373,3 +380,12 @@ h1.detail-title {
   .bbh-menu-across ul.menu li {
     display: block;
     text-align: center; } }
+@media (max-width: 519px) {
+  .listing-row-image,
+  .listing-row-body,
+  .listing-row-properties {
+    display: block; }
+
+  .listing-row-image {
+    height: 100px;
+    width: 100%; } }

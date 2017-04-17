@@ -15,7 +15,13 @@
     }
   }
 }
-
+@media (max-width: 1199px) {
+  .listing-row-image,
+  .listing-row-body,
+  .listing-row-properties {
+    display: table-cell;
+  }
+}
 @media (min-width: 992px) {
     .inventor-cover-filter .form-group  {
         width: 50%;
@@ -95,5 +101,14 @@
         //  max-width: 400px;
        }
      }
+   }
+   .listing-row-image,
+   .listing-row-body,
+   .listing-row-properties {
+     display: block;
+   }
+   .listing-row-image {
+     height: 100px;
+     width: 100%;
    }
  }

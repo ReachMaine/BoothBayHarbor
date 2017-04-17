@@ -203,11 +203,14 @@ h1.detail-title {
 }
 
 /**** archive ****/
+.listings-row .listing-container:nth-child(2n+1) {
+  clear: both;
+}
 .listing-row-image:before {
   background-image: none;
 }
-.listing-row-image {
-  height: 175px;
+.listing-row-image {  // also see media
+  //height: 175px;
   width: 25%;
   img {
     width: 100px;
