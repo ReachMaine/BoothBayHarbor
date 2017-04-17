@@ -15,7 +15,7 @@
        if (($term->taxonomy == "listing_categories") && ($term->name)) {
          echo "<h1>".$term->name."</h1>";
        } else {
-           if (! is_post_type_archive( array('listing', 'dine', 'food', 'lodging', 'shop', 'activity', 'live')) ) { ?>
+           if (! is_post_type_archive( array('listing', 'dine', 'food', 'lodging', 'shop', 'play', 'live')) ) { ?>
 
           <h1>
               <?php if ( is_archive() ) : ?>
