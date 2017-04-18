@@ -77,6 +77,7 @@
 									<?php /* if ( strpos( $website, 'http' ) !== 0 ) $website = sprintf( 'http://%s', $website );  zig xout*/
 										$website_display = preg_replace('#^https?://#', '', $website) ; // strip off http:  or https
 										if(substr($website_display, -1) == '/') { // check for trailing slash
+										    $website_display = substr($website_display, 0, -1);
 										} ?>
 									<li class="website">
 													<a href="<?php echo esc_attr( $website ); ?>" target="_blank"><?php echo esc_attr($website_display); ?></a>
