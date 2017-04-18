@@ -74,9 +74,9 @@
 									</li>
 							<?php endif; ?>
 							<?php if ( ! empty( $website ) ): ?>
-									<?php if ( strpos( $website, 'http' ) !== 0 ) $website = sprintf( 'http://%s', $website ); ?>
+									<?php /* if ( strpos( $website, 'http' ) !== 0 ) $website = sprintf( 'http://%s', $website );  zig xout*/ ?>
 									<li class="website">
-													<a href="<?php echo esc_attr( $website ); ?>" target="_blank"><?php echo esc_attr( $website ); ?></a>
+													<a href="<?php echo esc_attr( $website ); ?>" target="_blank"><?php echo esc_attr( preg_replace('#^https?://#', '', $website) ); ?></a>
 									</li>
 							<?php endif; ?>
 				</ul>
