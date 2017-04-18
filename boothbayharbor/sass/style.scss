@@ -43,16 +43,30 @@ License URI: http://www.gnu.org/licenses/gpl.html
         }
     }
 }
-//.widget.widget_nav_menu ul li a,
+//Type menu
 .widget.widget_nav_menu {
   #menu-main-types-menu { // ul
+    li:hover i::before, li:hover span::before {
+      color: white !important;
+      transition: color .4s;
+    }
+    li i::before, li span::before {
+      transition: color .4s;
+    }
     li {
-      font-size: 22px;
+      font-size: 31px;
       a {
         color: white;
       }
     }
   }
+}
+
+.bbh-menu-icons.bbh-bkg-grey {
+  background-color: rgba(0, 0, 0, .6);
+  position: relative;
+  z-index: 2;
+  margin-top: -51px;
 }
 
 .header-navigation .nav > li > a:hover, .header-navigation .footer-top .widget.widget_nav_menu ul > li > a:hover, .footer-top .widget.widget_nav_menu .header-navigation ul > li > a:hover, .header-navigation .footer-bottom .widget.widget_nav_menu ul > li > a:hover, .footer-bottom .widget.widget_nav_menu .header-navigation ul > li > a:hover {
@@ -68,7 +82,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 800px;
+    max-width: 950px;
     margin: auto;
     li {
       display: inline-block;
@@ -278,4 +292,10 @@ h1.detail-title {
       }
     }
 }
+
+.reach-logo:before {
+	content: url('images/reach-favicon.png');
+	padding-right: 4px;
+}
+
 @import "partials/media"; // keep at end of of file

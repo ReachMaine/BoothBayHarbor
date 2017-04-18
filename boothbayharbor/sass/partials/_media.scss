@@ -84,6 +84,23 @@
       border-bottom-color: white;
     }
 }
+@media (max-width: 768px) {
+  .home {
+    .owl-carousel {
+      height: 350px !important;
+      .inventor-slider-item-image {
+        height: 350px !important;
+      }
+    }
+    .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
+      height: 225px;
+   }
+   .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
+     font-size: 2em;
+   }
+ }
+}
+
  @media (max-width: 767px) { // mobile
    .hide-mobile {
      display: none!important;
@@ -91,6 +108,13 @@
    .bbh-menu-across ul.menu li {
       display: block;
       text-align: center;
+   }
+   .footer-first ul {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     max-width: 800px;
+     margin: auto;
    }
  }
 
@@ -111,4 +135,38 @@
      height: 100px;
      width: 100%;
    }
+
+   .header-bar-left .widget {
+     padding: 0px;
+   }
+
+   .widget.widget_nav_menu #menu-main-types-menu li {
+     font-size: 14px;
+   }
+
+   .footer-first ul li {
+     font-size: 11px;
+     a {
+       margin-right: 0px !important;
+     }
+   }
+
+   .widget.widget_archive ul li a i, .widget.widget_categories ul li a i, .widget.widget_pages ul li a i, .widget.widget_nav_menu ul li a i, .widget.widget_recent_entries ul li a i, .widget.widget_meta ul li a i {
+     margin-right: 0px;
+   }
+
+   .home {
+     .owl-carousel {
+       height: 200px !important;
+       .inventor-slider-item-image {
+         height: 200px !important;
+       }
+     }
+     .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
+       height: 225px;
+    }
+    .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
+      font-size: 2em;
+    }
+  }
  }
