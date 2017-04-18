@@ -69,8 +69,8 @@
 			<div class="listing-detail-contact">
 				<ul>
 							<?php if ( ! empty( $email ) ): ?>
-									<li class="email">
-													<a href="mailto:<?php echo esc_attr( $email ); ?>"><?php echo esc_attr( $email ); ?></a>
+									<li class="email antispamd">
+													<a target="_blank" href="mailto:<?php echo antispambot(esc_attr( $email ) ); ?>"><?php echo antispambot(esc_attr( $email )); ?></a>
 									</li>
 							<?php endif; ?>
 							<?php if ( ! empty( $website ) ): ?>
