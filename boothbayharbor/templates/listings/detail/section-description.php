@@ -74,9 +74,12 @@
 									</li>
 							<?php endif; ?>
 							<?php if ( ! empty( $website ) ): ?>
-									<?php /* if ( strpos( $website, 'http' ) !== 0 ) $website = sprintf( 'http://%s', $website );  zig xout*/ ?>
+									<?php /* if ( strpos( $website, 'http' ) !== 0 ) $website = sprintf( 'http://%s', $website );  zig xout*/
+										$website_display = preg_replace('#^https?://#', '', $website) ; // strip off http:  or https
+										if(substr($website_display, -1) == '/') { // check for trailing slash
+										} ?>
 									<li class="website">
-													<a href="<?php echo esc_attr( $website ); ?>" target="_blank"><?php echo esc_attr( preg_replace('#^https?://#', '', $website) ); ?></a>
+													<a href="<?php echo esc_attr( $website ); ?>" target="_blank"><?php echo esc_attr($website_display); ?></a>
 									</li>
 							<?php endif; ?>
 				</ul>
