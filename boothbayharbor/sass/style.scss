@@ -250,6 +250,17 @@ h1.detail-title {
   } // listing container
 }
 
+//Contact Form Styling
+
+.wpcf7 {
+  input[type=tel] {
+    width: 100%
+  }
+  label {
+    width: 100%;
+  }
+}
+
 //**** footer ****
 .footer-top  {
     margin-top: 40px;
