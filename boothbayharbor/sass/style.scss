@@ -111,8 +111,15 @@ License URI: http://www.gnu.org/licenses/gpl.html
     .inventor-cover {
       //  height: 200px; - moved to media.
     }
-    .inventor-cover-title h1 {
-      font-size: 3em;
+    .inventor-cover-title {
+      left: 0;
+      position: inherit;
+      top: 0;
+      transform: inherit;
+      h1 {
+        font-size: 3em;
+        float: left;
+      }
     }
 }
 // slideshow in header-top (homepage)
