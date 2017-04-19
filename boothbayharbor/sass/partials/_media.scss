@@ -46,6 +46,12 @@
         height: 300px;
       }
     }
+  .widget.widget_nav_menu #menu-main-types-menu li {
+    font-size: 23px;
+  }
+  .bbh-menu-icons.bbh-bkg-grey {
+    margin-top: -44px;
+  }
 }
 
 @media (min-width:768px) { // tablet & desktop
@@ -168,5 +174,8 @@
     .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
       font-size: 2em;
     }
+  }
+  .bbh-menu-icons.bbh-bkg-grey {
+    margin-top: -43px;
   }
  }

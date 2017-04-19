@@ -377,7 +377,13 @@ h1.detail-title {
     margin-right: 0px; }
 
   .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
-    height: 300px; } }
+    height: 300px; }
+
+  .widget.widget_nav_menu #menu-main-types-menu li {
+    font-size: 23px; }
+
+  .bbh-menu-icons.bbh-bkg-grey {
+    margin-top: -44px; } }
 @media (min-width: 768px) {
   .hide-desktop {
     display: none !important; }
@@ -460,4 +466,7 @@ h1.detail-title {
   .home .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
     height: 225px; }
   .home .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
-    font-size: 2em; } }
+    font-size: 2em; }
+
+  .bbh-menu-icons.bbh-bkg-grey {
+    margin-top: -43px; } }
