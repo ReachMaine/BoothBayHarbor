@@ -87,15 +87,7 @@
 
 
 
-<?php if ( ! empty( $post->post_content ) ) : ?>
-	<div class="listing-detail-section" id="listing-detail-section-description">
-			<div class="listing-detail-description-wrapper">
-	    	<?php the_content(); ?>
-		</div>
-	</div><!-- /.listing-detail-section -->
 
-<?php endif; ?>
-	
 <?php
 
 $default_social_networks = Inventor_Metaboxes::social_networks();
@@ -238,4 +230,12 @@ foreach( $social_networks as $key => $title ) {
 <?php if ($two_cols) { ?>
 			</div><!-- /.col-* -->
 		</div><!-- /.row -->
+		<?php if ( ! empty( $post->post_content ) ) : ?>
+			<div class="listing-detail-section" id="listing-detail-section-description">
+					<div class="listing-detail-description-wrapper">
+			    	<?php the_content(); ?>
+				</div>
+			</div><!-- /.listing-detail-section -->
+
+		<?php endif; ?>
 <?php } ?>
