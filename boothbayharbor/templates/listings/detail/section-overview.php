@@ -18,6 +18,7 @@
                         }
                       break;
                     case 'listing_listing_category':
+                    case 'listing_locations':
                         $displayp = false; // dont show category
                       break;
                   } // switch
