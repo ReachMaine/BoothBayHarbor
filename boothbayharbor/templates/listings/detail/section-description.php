@@ -1,11 +1,20 @@
 <?php global $post; ?>
 
 	<div class="detail-banner-info">
+		<?php /* */
+			$ptyp = $post->post_type;
+			$backp = "";
+			//$backp .= '<div class="detail-back-to-type">';
+			$backp .= '<a href="'.get_site_url().'/listings/?listing_types='.$ptyp.'">'.ucfirst($ptyp)." -> ";
+			$backp .=  '</a>';
+			//$backp .= '</div>';
+		?>
 			<?php $listing_category = Inventor_Query::get_listing_category_name( get_the_ID(), ',', true ); ?>
 
 			<?php if ( ! empty( $listing_category ) ) : ?>
-					<div class="detail-label"><?php echo wp_kses( $listing_category, wp_kses_allowed_html( 'post' ) ); ?></div>
+					<div class="detail-label"><?php echo $backp.wp_kses( $listing_category, wp_kses_allowed_html( 'post' ) ); ?></div>
 			<?php endif; ?>
+
 	</div><!-- /.detail-banner-info -->
 
 	<h1 class="detail-title">
