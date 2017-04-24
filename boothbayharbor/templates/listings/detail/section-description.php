@@ -18,7 +18,8 @@
 	</div><!-- /.detail-banner-info -->
 
 	<h1 class="detail-title">
-			<?php echo apply_filters( 'inventor_listing_title', get_the_title(), get_the_ID() ); ?>
+			<?php /* echo apply_filters( 'inventor_listing_title', get_the_title(), get_the_ID() ); */ ?>
+			<?php echo get_the_title(); ?>
 	</h1>
 
 	<?php $slogan = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'slogan', true ); ?>
@@ -42,13 +43,18 @@
 					 <div class="col-md-6">
 		<?php } ?>
 
-
+		<?php $logo = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'logo', true );
+				if ( ! empty( $logo ) ) {
+				$rendered_logo = '<img src="'. $logo .'" class="listing-title-logo" alt="' . get_the_title( $post_id ) . '">';
+				echo $rendered_logo;
+			}
+		?>
 	<?php /* vars for contact */ ?>
 	<?php $email = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'email', true ); ?>
 	<?php $website = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'website', true ); ?>
 	<?php $phone = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'phone', true ); ?>
 	<?php $address = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'address', true ); ?>
- <?php if ( ! empty( $phone ) || ! empty( $address ) ) {?>
+ <?php if ( ! empty( $phone ) || ! empty( $address ) || ! empty( $email ) || ! empty( $website ) )    {?>
 	<div class="listing-detail-contact">
 			<ul>
 					<?php if ( ! empty( $address ) ): ?>
@@ -58,6 +64,21 @@
 					<?php if ( ! empty( $phone ) ): ?>
 							<li class="phone">
 									<a href="tel:<?php echo wp_kses( str_replace(' ', '', $phone), wp_kses_allowed_html( 'post' ) ); ?>"><?php echo wp_kses( $phone, wp_kses_allowed_html( 'post' ) ); ?></a>
+							</li>
+					<?php endif; ?>
+					<?php if ( ! empty( $email ) ): ?>
+							<li class="email antispamd">
+											<a target="_blank" href="mailto:<?php echo antispambot(esc_attr( $email ) ); ?>"><?php echo antispambot(esc_attr( $email )); ?></a>
+							</li>
+					<?php endif; ?>
+					<?php if ( ! empty( $website ) ): ?>
+							<?php /* if ( strpos( $website, 'http' ) !== 0 ) $website = sprintf( 'http://%s', $website );  zig xout*/
+								$website_display = preg_replace('#^https?://#', '', $website) ; // strip off http:  or https
+								if(substr($website_display, -1) == '/') { // check for trailing slash
+										$website_display = substr($website_display, 0, -1);
+								} ?>
+							<li class="website">
+											<a href="<?php echo esc_attr( $website ); ?>" target="_blank"><?php echo esc_attr($website_display); ?></a>
 							</li>
 					<?php endif; ?>
 			</ul>
@@ -74,29 +95,7 @@
 	</div><!-- /.listing-detail-section -->
 
 <?php endif; ?>
-		<?php if ( ! empty( $email ) || ! empty( $website ) ) { ?>
-			<div class="listing-detail-contact">
-				<ul>
-							<?php if ( ! empty( $email ) ): ?>
-									<li class="email antispamd">
-													<a target="_blank" href="mailto:<?php echo antispambot(esc_attr( $email ) ); ?>"><?php echo antispambot(esc_attr( $email )); ?></a>
-									</li>
-							<?php endif; ?>
-							<?php if ( ! empty( $website ) ): ?>
-									<?php /* if ( strpos( $website, 'http' ) !== 0 ) $website = sprintf( 'http://%s', $website );  zig xout*/
-										$website_display = preg_replace('#^https?://#', '', $website) ; // strip off http:  or https
-										if(substr($website_display, -1) == '/') { // check for trailing slash
-										    $website_display = substr($website_display, 0, -1);
-										} ?>
-									<li class="website">
-													<a href="<?php echo esc_attr( $website ); ?>" target="_blank"><?php echo esc_attr($website_display); ?></a>
-									</li>
-							<?php endif; ?>
-				</ul>
-			</div>
-<?php } ?>
-
-
+	
 <?php
 
 $default_social_networks = Inventor_Metaboxes::social_networks();
