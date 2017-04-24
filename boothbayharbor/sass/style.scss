@@ -108,8 +108,9 @@ License URI: http://www.gnu.org/licenses/gpl.html
 }
 // header top widget area
 .bbh-memsearch-short.widget_inventor_cover {
-    .inventor-cover {
+    #video-outer-wrap.inventor-cover {
       //  height: 200px; - moved to media.
+      height: 0px;
     }
     .inventor-cover-title {
       left: 0;
@@ -117,8 +118,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
       top: 0;
       transform: inherit;
       h1 {
-        font-size: 3em;
-        float: left;
+        font-size: 2.5em;
+        //float: left;
       }
     }
 }

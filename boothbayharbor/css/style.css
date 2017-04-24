@@ -216,14 +216,15 @@ p#slider_1_mebox_subtitle {
   color: #64bfec;
   font-size: 1.1em; }
 
+.bbh-memsearch-short.widget_inventor_cover #video-outer-wrap.inventor-cover {
+  height: 0px; }
 .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title {
   left: 0;
   position: inherit;
   top: 0;
   transform: inherit; }
   .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
-    font-size: 3em;
-    float: left; }
+    font-size: 2.5em; }
 
 .widget_inventor_slider .inventor-slider-list .owl-item .inventor-slider-item.alignment-center .inventor-slider-item-image {
   background-position: center top !important; }
@@ -372,18 +373,22 @@ h1.detail-title {
   .listing-row-properties {
     display: table-cell; } }
 @media (min-width: 992px) {
-  .inventor-cover-filter .form-group {
-    width: 50%; }
-
-  .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
-    height: 200px; } }
+  .bbh-memsearch-short.widget_inventor_cover {
+    padding-top: 30px; }
+    .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
+      float: left;
+      width: 50%;
+      text-align: right; } }
 @media (max-width: 991px) {
   .header-bar-left .sow-features-list {
     margin-left: 0px;
     margin-right: 0px; }
 
-  .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
-    height: 300px; }
+  .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
+    text-align: center; }
+  .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title .inventor-cover-filter {
+    max-width: 80%;
+    margin: auto; }
 
   .widget.widget_nav_menu #menu-main-types-menu li {
     font-size: 23px; }
@@ -423,8 +428,6 @@ h1.detail-title {
     height: 350px !important; }
     .home .owl-carousel .inventor-slider-item-image {
       height: 350px !important; }
-  .home .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
-    height: 225px; }
   .home .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
     font-size: 2em; } }
 @media (max-width: 767px) {
@@ -469,8 +472,6 @@ h1.detail-title {
     height: 200px !important; }
     .home .owl-carousel .inventor-slider-item-image {
       height: 200px !important; }
-  .home .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
-    height: 225px; }
   .home .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
     font-size: 2em; }
 
