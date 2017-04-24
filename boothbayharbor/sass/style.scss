@@ -43,8 +43,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
         }
     }
 }
-//Type menu
-.widget.widget_nav_menu {
+//Type menu over slider on homepage
+.bbh-menu-homepage {
   #menu-main-types-menu { // ul
     li:hover i::before, li:hover span::before {
       color: white !important;
@@ -58,6 +58,26 @@ License URI: http://www.gnu.org/licenses/gpl.html
       a {
         color: white;
       }
+    }
+  }
+}
+
+//Type menu in footer
+footer .bbh-menu-footer {
+  li:hover i::before, li:hover span::before, li:hover  {
+    color: white !important;
+    transition: color .4s;
+  }
+  li i::before, li span::before {
+    transition: color .4s;
+  }
+  li {
+    font-size: 1.2em;
+    a {
+      color: white;
+    }
+    a:hover {
+      color: white !important;
     }
   }
 }
@@ -226,9 +246,21 @@ h1.detail-title {
 }
 
 /**** archive ****/
-.listings-row .listing-container:nth-child(2n+1) {
-  clear: both;
+.listings-row {
+  .listing-container:nth-child(2n+1) {
+    clear: both;
+  }
 }
+
+.listing-row {
+  display: block;
+  h2.listing-row-title{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 10px;
+  }
+}
+
 .listing-row-image:before {
   background-image: none;
 }
