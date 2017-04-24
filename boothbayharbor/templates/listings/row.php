@@ -3,6 +3,7 @@
 * 10Apr17 - remove hover actions
           - add addres & phone.
 * 17Apr17 zig - use logo instead of featured image here (category archive)
+* 24Apr17 zig - move title to top of container.
  */ ?>
 
 
@@ -22,6 +23,7 @@
 <?php $image = apply_filters( 'inventor_listing_featured_image', $image, get_the_ID() ); ?>
 
 <div class="listing-row <?php if ( $featured ) : ?>featured<?php endif; ?>">
+    <h2 class="listing-row-title"><a href="<?php the_permalink(); ?>"><?php echo Inventor_Utilities::excerpt( get_the_title(), 50 ); ?></a></h2>
     <div class="listing-row-image" >
         <a href="<?php the_permalink() ?>" class="listing-row-image-link"><img src="<?php echo esc_attr( $image ); ?>"></a>
 
@@ -37,15 +39,15 @@
             <div class="listing-row-label-top listing-row-label-top-right"><?php echo esc_attr__( 'Reduced', 'inventor' ); ?></div><!-- /.listing-row-label-top-right -->
         <?php endif; ?>
 
-        <?php $listing_type_name = Inventor_Post_Types::get_listing_type_name(); ?>
+        <?php /*$listing_type_name = Inventor_Post_Types::get_listing_type_name(); ?>
         <?php if ( ! empty( $listing_type_name ) ) : ?>
             <div class="listing-row-label-bottom"><?php echo wp_kses( $listing_type_name, wp_kses_allowed_html( 'post' ) ); ?></div><!-- /.listing-row-label-bottom -->
-        <?php endif; ?>
+        <?php endif; */ ?>
     </div><!-- /.listing-row-image -->
 
 
     <div class="listing-row-body">
-        <h2 class="listing-row-title"><a href="<?php the_permalink(); ?>"><?php echo Inventor_Utilities::excerpt( get_the_title(), 50 ); ?></a></h2>
+        <?php /* <h2 class="listing-row-title"><a href="<?php the_permalink(); ?>"><?php echo Inventor_Utilities::excerpt( get_the_title(), 50 ); ?></a></h2> */ ?>
         <div class="listing-row-content">
             <?php /* the_excerpt(); */ ?>
             <?php
