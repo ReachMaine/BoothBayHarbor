@@ -124,24 +124,19 @@ if (!function_exists('bbh_members_in_cat')) {
 			if ($title) {
 				$html_out .= '<h4 class="bbh_member_in_cat_title">'.$title.'</h4>';
 			}
-			$html_out .= "<!-- cat ".$cat."-->";
-			$html_out .= "<p>Got here with ".$cat.".</p>";
-
+			//$html_out .= "<!-- cat ".$cat."-->";
 			$args = array(
 					'post_type' => array('dine', 'food', 'stay', 'play', 'live'),
-					'category_name' => $cat,
-				   /* 'tax_query' => array(
+				   'tax_query' => array(
 						 array(
 								 'taxonomy' => 'listing_categories',
 								 'field' => 'slug',
 								 'terms' => $cat,
 						 ),
-				 ), */
+				 ),
 			);
 
 			$cat_query = new WP_Query($args);
-			echo "<pre>Last SQL-Query: {$cat_query->request}</pre>";
-			//var_dump($cat_query);
 			if ($cat_query -> have_posts()) {
 				$html_out .= "<ul>";
         while($cat_query->have_posts()) : $cat_query->the_post();
