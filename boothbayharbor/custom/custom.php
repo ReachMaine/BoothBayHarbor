@@ -138,9 +138,9 @@ if (!function_exists('bbh_members_in_cat')) {
 
 			$cat_query = new WP_Query($args);
 			if ($cat_query -> have_posts()) {
-				$html_out .= "<ul>";
+				$html_out .= '<ul class="bbh_members_in_cat">';
         while($cat_query->have_posts()) : $cat_query->the_post();
-            $html_out .= '<li><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
+            $html_out .= '<li class="bbh_member_in_cat"><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
 						//get_template_part( 'templates/content' );
         endwhile;
 				$html_out .= "</ul>";
