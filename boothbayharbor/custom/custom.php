@@ -105,3 +105,58 @@ if (!function_exists('bbh_listing_categories_type')) {
 	} // end function
 } // end if not exists
 add_shortcode( 'bbh_type_categories', 'bbh_listing_categories_type' );
+
+
+
+//function for shortcode showing all listings in category
+if (!function_exists('bbh_members_in_cat')) {
+	function bbh_members_in_cat( $atts ) {
+    $atts = shortcode_atts( array(
+      'show_all' => true,
+			'title' => '',
+			'cat' => '',
+    ), $atts, 'bbh_memberlist' );
+		$cat = $atts['cat'];
+		$title = $atts['title'];
+		$html_out ="";
+
+		if ($cat) {
+			if ($title) {
+				$html_out .= '<h4 class="bbh_member_in_cat_title">'.$title.'</h4>';
+			}
+			$html_out .= "<!-- cat ".$cat."-->";
+			$html_out .= "<p>Got here with ".$cat.".</p>";
+
+			$args = array(
+					'post_type' => array('dine', 'food', 'stay', 'play', 'live'),
+					'category_name' => $cat,
+				   /* 'tax_query' => array(
+						 array(
+								 'taxonomy' => 'listing_categories',
+								 'field' => 'slug',
+								 'terms' => $cat,
+						 ),
+				 ), */
+			);
+
+			$cat_query = new WP_Query($args);
+			echo "<pre>Last SQL-Query: {$cat_query->request}</pre>";
+			//var_dump($cat_query);
+			if ($cat_query -> have_posts()) {
+				$html_out .= "<ul>";
+        while($cat_query->have_posts()) : $cat_query->the_post();
+            $html_out .= '<li><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
+						//get_template_part( 'templates/content' );
+        endwhile;
+				$html_out .= "</ul>";
+			}
+
+		} else {
+			$html_out .= "<!-- no category given -->";
+		}
+		return $html_out;
+  } // end function bhh_get_members()
+} // end function exists.
+
+
+add_shortcode( 'bbh_members_in_cat', 'bbh_members_in_cat' );
