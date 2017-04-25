@@ -47,3 +47,57 @@ if (!function_exists('bbh_listing_categories_display')) {
 	}
 }
 add_shortcode( 'bbh_categories', 'bbh_listing_categories_display' );
+
+// function for shortcode bbh_categories
+if (!function_exists('bbh_listing_categories_type')) {
+	function bbh_listing_categories_type( $atts ) {
+		$atts = shortcode_atts( array(
+			'show_all' => true,
+			'title' => '',
+			'type' => 'stay',
+		), $atts, 'bbh_listing_categories_type' );
+  $type 			  = $atts['type'];
+	$title        = $atts['title'];
+	// List terms in a given taxonomy using wp_list_categories (also useful as a widget if using a PHP Code plugin)
+	$taxonomy     = 'listing_categories';
+	$orderby      = 'name';
+	$show_count   = false;
+	$pad_counts   = false;
+	$hierarchical = true;
+
+
+
+	$args = array(
+		'type' => 			$type,
+	  'taxonomy'     => $taxonomy,
+	  'orderby'      => $orderby,
+	  'show_count'   => $show_count,
+	  'pad_counts'   => $pad_counts,
+	  'hierarchical' => $hierarchical,
+    'meta_query' => array(
+					array(
+							'key' => 'listing_category_listing_types',
+							'value' => $type,
+							'compare' => 'LIKE'
+						)
+			)
+	);
+	$categories = get_categories( $args );
+	$html_out = "";
+	if ($title) {
+		$html_out .= '<h3 class="bbh_listcat_title">'.$title."</h3>";
+	}
+	$html_out .= "<!-- type is: ".$type."-->";
+	if ($categories) {
+			//echo "<pre>"; var_dump($categories); echo "</pre>";
+			$html_out .= '<ul class="bbh_listcats">';
+			foreach ( $categories as $cat ) {
+			    $html_out .= '<li class="bbh_listcat">'.$cat->name.'</li>';
+			}
+			$html_out .= "</ul>";
+		}
+		return $html_out;
+
+	} // end function
+} // end if not exists
+add_shortcode( 'bbh_type_categories', 'bbh_listing_categories_type' );
