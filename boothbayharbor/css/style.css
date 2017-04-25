@@ -169,6 +169,9 @@ p#slider_1_mebox_subtitle {
   .page-wrapper .header .header-wrapper .header-logo img {
     max-height: initial; }
 
+.submenu-dark .header-navigation .nav > li .sub-menu li:hover > a, .submenu-dark .header-navigation .nav > li .sub-menu li > a i, .submenu-dark .header-navigation .nav > li .sub-menu li > a span {
+  color: #64bfec !important; }
+
 .bbh-menu-homepage #menu-main-types-menu li:hover i::before, .bbh-menu-homepage #menu-main-types-menu li:hover span::before {
   color: white !important;
   transition: color .4s; }
@@ -259,6 +262,9 @@ footer .bbh-menu-footer li {
 /**** content ****/
 .main-inner {
   padding-top: 20px; }
+
+.post-detail .post-content {
+  text-align: initial; }
 
 .post-detail .post-content a {
   border-bottom: 0px; }
@@ -402,7 +408,16 @@ img.listing-title-logo {
   .archive .filter-form .yearround {
     width: 15% !important; }
   .archive .filter-form .form-group-button {
-    width: 20% !important; } }
+    width: 20% !important; }
+
+  .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title {
+    transform: translate(-42%) !important; }
+    .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
+      width: 30%; }
+  .bbh-memsearch-short.widget_inventor_cover .inventor-cover-filter .form-group-keyword {
+    width: 16%; }
+  .bbh-memsearch-short.widget_inventor_cover .inventor-cover-filter .form-group-button {
+    width: 10%; } }
 @media (max-width: 1199px) {
   .listing-row-image,
   .listing-row-body,
@@ -412,18 +427,18 @@ img.listing-title-logo {
   .bbh-memsearch-short.widget_inventor_cover {
     padding-top: 30px; }
     .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title {
-      transform: translate(-40%);
+      transform: translate(-35%);
       left: 50%; }
       .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
         float: left;
-        width: 30%;
+        width: 34%;
         text-align: right;
         margin-top: 9px;
         font-size: 2em; }
     .bbh-memsearch-short.widget_inventor_cover .inventor-cover-filter .form-group-keyword {
-      width: 23%; }
+      width: 21%; }
     .bbh-memsearch-short.widget_inventor_cover .inventor-cover-filter .form-group-button {
-      width: 15%; } }
+      width: 13%; } }
 @media (max-width: 991px) {
   .header-bar-left .sow-features-list {
     margin-left: 0px;

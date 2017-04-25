@@ -43,6 +43,11 @@ License URI: http://www.gnu.org/licenses/gpl.html
         }
     }
 }
+
+.submenu-dark .header-navigation .nav > li .sub-menu li:hover > a, .submenu-dark .header-navigation .nav > li .sub-menu li > a i, .submenu-dark .header-navigation .nav > li .sub-menu li > a span {
+  color: $bbh-lighter-blue !important;
+}
+
 //Type menu over slider on homepage
 .bbh-menu-homepage {
   #menu-main-types-menu { // ul
@@ -180,6 +185,10 @@ footer .bbh-menu-footer {
 
 .main-inner {
     padding-top: 20px;
+}
+
+.post-detail .post-content {
+  text-align: initial;
 }
 
 .post-detail .post-content a  {
