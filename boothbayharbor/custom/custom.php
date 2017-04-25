@@ -126,7 +126,7 @@ if (!function_exists('bbh_members_in_cat')) {
 			}
 			//$html_out .= "<!-- cat ".$cat."-->";
 			$args = array(
-					'post_type' => array('dine', 'food', 'stay', 'play', 'live'),
+					'post_type' => array('dine', 'food', 'stay', 'play', 'live', 'shop'),
 				   'tax_query' => array(
 						 array(
 								 'taxonomy' => 'listing_categories',
