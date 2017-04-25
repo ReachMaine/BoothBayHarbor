@@ -254,7 +254,7 @@ footer .bbh-menu-footer li {
 
 /**** content ****/
 .main-inner {
-  margin-top: 20px; }
+  padding-top: 20px; }
 
 .post-detail .post-content a {
   border-bottom: 0px; }
