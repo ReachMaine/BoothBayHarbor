@@ -85,7 +85,7 @@ if (!function_exists('bbh_listing_categories_type')) {
 	$categories = get_categories( $args );
 	$html_out = "";
 	if ($title) {
-		$html_out .= '<h3 class="bbh_listcat_title">'.$title."</h3>";
+		$html_out .= '<h4 class="bbh_listcat_title">'.$title."</h3>";
 	}
 	$html_out .= "<!-- type is: ".$type."-->";
 	if ($categories) {
