@@ -65,8 +65,6 @@ if (!function_exists('bbh_listing_categories_type')) {
 	$pad_counts   = false;
 	$hierarchical = true;
 
-
-
 	$args = array(
 		'type' => 			$type,
 	  'taxonomy'     => $taxonomy,
@@ -84,22 +82,25 @@ if (!function_exists('bbh_listing_categories_type')) {
 	);
 	$categories = get_categories( $args );
 	$html_out = "";
-	if ($title) {
-		$html_out .= '<h4 class="bbh_listcat_title">'.$title."</h3>";
-	}
-	$html_out .= "<!-- type is: ".$type."-->";
+
 	if ($categories) {
-			//echo "<pre>"; var_dump($categories); echo "</pre>";
-			$html_out .= '<ul class="bbh_listcats">';
-			foreach ( $categories as $cat ) {
-			    $html_out .= '<li class="bbh_listcat">';
-						$html_out .= '<a href="'.get_category_link($cat->term_id).'" >';
-							$html_out .= $cat->name;
-						$html_out .= '</a>';
-					$html_out .= '</li>';
-			}
-			$html_out .= "</ul>";
+		$html_out .= '<div class="bbh_listcat_wrapper">';
+			if ($title) {
+			$html_out .= '<h4 class="bbh_listcat_title">'.$title."</h3>";
 		}
+		$html_out .= "<!-- type is: ".$type."-->";
+			//echo "<pre>"; var_dump($categories); echo "</pre>";
+		$html_out .= '<ul class="bbh_listcats">';
+		foreach ( $categories as $cat ) {
+		    $html_out .= '<li class="bbh_listcat">';
+					$html_out .= '<a href="'.get_category_link($cat->term_id).'" >';
+						$html_out .= $cat->name;
+					$html_out .= '</a>';
+				$html_out .= '</li>';
+		}
+		$html_out .= "</ul>";
+		$html_out .= '</div>';
+	} // end if categories.
 		return $html_out;
 
 	} // end function
@@ -121,9 +122,7 @@ if (!function_exists('bbh_members_in_cat')) {
 		$html_out ="";
 
 		if ($cat) {
-			if ($title) {
-				$html_out .= '<h4 class="bbh_member_in_cat_title">'.$title.'</h4>';
-			}
+
 			//$html_out .= "<!-- cat ".$cat."-->";
 			$args = array(
 					'post_type' => array('dine', 'food', 'stay', 'play', 'live', 'shop'),
@@ -138,12 +137,17 @@ if (!function_exists('bbh_members_in_cat')) {
 
 			$cat_query = new WP_Query($args);
 			if ($cat_query -> have_posts()) {
-				$html_out .= '<ul class="bbh_members_in_cat">';
-        while($cat_query->have_posts()) : $cat_query->the_post();
-            $html_out .= '<li class="bbh_member_in_cat"><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
-						//get_template_part( 'templates/content' );
-        endwhile;
-				$html_out .= "</ul>";
+				$html_out .= '<div class="bbh_member_in_cat_wrapper">';
+				if ($title) {
+					$html_out .= '<h4 class="bbh_member_in_cat_title">'.$title.'</h4>';
+				}
+					$html_out .= '<ul class="bbh_members_in_cat">';
+	        while($cat_query->have_posts()) : $cat_query->the_post();
+	            $html_out .= '<li class="bbh_member_in_cat"><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
+							//get_template_part( 'templates/content' );
+	        endwhile;
+					$html_out .= "</ul>";
+				$html_out .= "</div>";
 			}
 
 		} else {
