@@ -27,14 +27,23 @@
     .bbh-memsearch-short.widget_inventor_cover {
         padding-top: 30px;
       .inventor-cover-title {
+          transform: translate(-40%);
+          left: 50%;
           h1 {
             float: left;
-            width: 50%;
+            width: 30%;
             text-align: right;
+            margin-top: 9px;
+            font-size: 2em;
           }
       }
-      .inventor-cover-filter .form-group  {
-          //width: 50%;
+      .inventor-cover-filter {
+        .form-group-keyword  {
+          width: 23%;
+        }
+        .form-group-button {
+          width: 15%;
+        }
       }
     }
 }

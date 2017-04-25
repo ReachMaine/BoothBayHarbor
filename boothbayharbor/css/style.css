@@ -335,7 +335,8 @@ img.listing-title-logo {
 .listing-row-image {
   width: 48%; }
   .listing-row-image img {
-    width: 100%; }
+    width: 100%;
+    padding-left: 5%; }
 
 .post-detail .listing-row-title, .listing-row-title {
   margin: 0 0 5px 0; }
@@ -406,10 +407,19 @@ img.listing-title-logo {
 @media (min-width: 992px) {
   .bbh-memsearch-short.widget_inventor_cover {
     padding-top: 30px; }
-    .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
-      float: left;
-      width: 50%;
-      text-align: right; } }
+    .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title {
+      transform: translate(-40%);
+      left: 50%; }
+      .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
+        float: left;
+        width: 30%;
+        text-align: right;
+        margin-top: 9px;
+        font-size: 2em; }
+    .bbh-memsearch-short.widget_inventor_cover .inventor-cover-filter .form-group-keyword {
+      width: 23%; }
+    .bbh-memsearch-short.widget_inventor_cover .inventor-cover-filter .form-group-button {
+      width: 15%; } }
 @media (max-width: 991px) {
   .header-bar-left .sow-features-list {
     margin-left: 0px;
