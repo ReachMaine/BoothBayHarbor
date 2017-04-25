@@ -69,8 +69,11 @@
                       }
                       if ( ! empty( $website ) ) {
                         $website_display = preg_replace('#^https?://#', '', $website);
-                        if(substr($website_display, -1) == '/') { // check for trailing slash
-        										$website_display = substr($website_display, 0, -1);
+                        if (substr($website_display, 0,4) == 'www.') { // strip off www. if it's there.
+                          $website_display = substr($website_display , 4, strlen($website_display));
+                        }
+                        if (substr($website_display, -1) == '/') { // check for trailing slash
+        										$website_display = substr($website_display , 0, -1);
         								}
                          echo '<li class="website">';
                           echo '<a href="'.esc_attr( $website ).'" target="_blank">'.esc_attr($website_display).'</a>';
