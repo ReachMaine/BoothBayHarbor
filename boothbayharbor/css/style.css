@@ -106,6 +106,10 @@ button,
 .widget .widget-pb {
   padding-bottom: 30px; }
 
+.post-content .widget ul li {
+  border-bottom: 0px;
+  padding: 4px 0; }
+
 /*** end settings ***/
 .eo_card_box > div:nth-child(1) {
   display: none; }
