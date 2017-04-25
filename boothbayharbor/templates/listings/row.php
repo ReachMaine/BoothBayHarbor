@@ -53,7 +53,8 @@
             <?php
                 $phone = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'phone', true );
                 $address = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'address', true );
-                if ( ! empty( $phone ) ||  ! empty( $address ) )  {
+                 $website = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'website', true );
+                if ( ! empty( $phone ) ||  ! empty( $address ) || ! empty($website) )  {
                   echo ' <div class="bbh-listing-detail-contact">';
                     echo '<ul>';
                     if ( ! empty( $address  ) ) {
@@ -64,6 +65,15 @@
                       if ( ! empty( $phone ) ) {
                          echo '<li class="phone">';
                           echo '<a href="tel:'.wp_kses( str_replace(' ', '', $phone), wp_kses_allowed_html( 'post' ) ).'">'.wp_kses( $phone, wp_kses_allowed_html( 'post' ) ).'</a>';
+                         echo '</li>';
+                      }
+                      if ( ! empty( $website ) ) {
+                        $website_display = preg_replace('#^https?://#', '', $website);
+                        if(substr($website_display, -1) == '/') { // check for trailing slash
+        										$website_display = substr($website_display, 0, -1);
+        								}
+                         echo '<li class="website">';
+                          echo '<a href="'.esc_attr( $website ).'" target="_blank">'.esc_attr($website_display).'</a>';
                          echo '</li>';
                       }
                     echo '</ul>';
