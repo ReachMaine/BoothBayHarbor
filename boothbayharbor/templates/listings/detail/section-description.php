@@ -62,12 +62,12 @@
 									<?php echo wp_kses( nl2br( $address ), wp_kses_allowed_html( 'post' ) ); ?>
 					<?php endif; ?>
 					<?php if ( ! empty( $phone ) ): ?>
-							<li class="phone">
+							<li class="phone"><i class="fa fa-phone"></i>
 									<a href="tel:<?php echo wp_kses( str_replace(' ', '', $phone), wp_kses_allowed_html( 'post' ) ); ?>"><?php echo wp_kses( $phone, wp_kses_allowed_html( 'post' ) ); ?></a>
 							</li>
 					<?php endif; ?>
 					<?php if ( ! empty( $email ) ): ?>
-							<li class="email antispamd">
+							<li class="email antispamd"><i class="fa fa-envelope"></i>
 											<a target="_blank" href="mailto:<?php echo antispambot(esc_attr( $email ) ); ?>"><?php echo antispambot(esc_attr( $email )); ?></a>
 							</li>
 					<?php endif; ?>
@@ -77,7 +77,7 @@
 								if(substr($website_display, -1) == '/') { // check for trailing slash
 										$website_display = substr($website_display, 0, -1);
 								} ?>
-							<li class="website">
+							<li class="website"><i class="fa fa-link"></i>
 											<a href="<?php echo esc_attr( $website ); ?>" target="_blank"><?php echo esc_attr($website_display); ?></a>
 							</li>
 					<?php endif; ?>
