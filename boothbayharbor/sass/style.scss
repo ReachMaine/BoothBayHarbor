@@ -314,7 +314,12 @@ h1.detail-title {
     width: 100%;
   }
 }
-
+// easy responsive tab stylying {
+.osc-res-tab .tab-content  {
+    li {
+      width: 100%;
+    }
+}
 //**** footer ****
 .footer-top  {
     margin-top: 40px;
