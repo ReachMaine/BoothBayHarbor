@@ -367,6 +367,10 @@ img.listing-title-logo {
 
 .osc-res-tab .tab-content li {
   width: 100%; }
+  .osc-res-tab .tab-content li a:before, .osc-res-tab .tab-content li a:after {
+    content: none; }
+  .osc-res-tab .tab-content li a {
+    display: initial; }
 
 .footer-top {
   margin-top: 40px;
