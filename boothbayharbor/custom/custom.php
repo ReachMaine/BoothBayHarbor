@@ -92,7 +92,11 @@ if (!function_exists('bbh_listing_categories_type')) {
 			//echo "<pre>"; var_dump($categories); echo "</pre>";
 			$html_out .= '<ul class="bbh_listcats">';
 			foreach ( $categories as $cat ) {
-			    $html_out .= '<li class="bbh_listcat">'.$cat->name.'</li>';
+			    $html_out .= '<li class="bbh_listcat">';
+						$html_out .= '<a href="'.get_category_link($cat->term_id).'" >';
+							$html_out .= $cat->name;
+						$html_out .= '</a>';
+					$html_out .= '</li>';
 			}
 			$html_out .= "</ul>";
 		}
