@@ -279,12 +279,18 @@ footer .bbh-menu-footer li {
 
 h1.detail-title {
   padding-left: 5px; }
-  h1.detail-title img.listing-title-logo {
-    max-width: 100px; }
+
+img.listing-title-logo {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-bottom: 15px; }
 
 .listing-detail-contact {
   margin-bottom: 0px;
-  padding-bottom: 0px; }
+  margin-left: 15px;
+  padding: 10px;
+  background-color: #fafafa;
+  border: 1px solid #ececec; }
   .listing-detail-contact ul li {
     line-height: 30px; }
 
@@ -327,10 +333,9 @@ h1.detail-title {
   background-image: none; }
 
 .listing-row-image {
-  width: 25%; }
+  width: 48%; }
   .listing-row-image img {
-    width: 100px;
-    height: 100px; }
+    width: 100%; }
 
 .post-detail .listing-row-title, .listing-row-title {
   margin: 0 0 5px 0; }
@@ -349,7 +354,7 @@ h1.detail-title {
   width: 50%; }
   .archive.tax-listing_categories .listing-container .listing-row-body,
   .post-type-archive .listing-container .listing-row-body {
-    padding: 20px; }
+    padding: 5px 5px 5px 10px; }
     .archive.tax-listing_categories .listing-container .listing-row-body .bbh-listing-detail-contact ul,
     .post-type-archive .listing-container .listing-row-body .bbh-listing-detail-contact ul {
       list-style: none;

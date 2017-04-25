@@ -206,13 +206,20 @@ footer .bbh-menu-footer {
 }
 h1.detail-title {
    padding-left: 5px;
-   img.listing-title-logo {
-    max-width: 100px;
-  }
 }
+
+img.listing-title-logo {
+ max-width: 100%;
+ padding-left: 15px;
+ padding-bottom: 15px;
+}
+
 .listing-detail-contact {
   margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-left: 15px;
+  padding: 10px;
+  background-color: #fafafa;
+  border: 1px solid #ececec;
    ul li {
      line-height: 30px;
    }
@@ -266,10 +273,9 @@ h1.detail-title {
 }
 .listing-row-image {  // also see media
   //height: 175px;
-  width: 25%;
+  width: 48%;
   img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
   }
   //background-position: center top;
 }
@@ -293,7 +299,7 @@ h1.detail-title {
   .listing-container {
     width: 50%;
     .listing-row-body {
-      padding: 20px;
+      padding: 5px 5px 5px 10px;
       .bbh-listing-detail-contact {
         ul {
           list-style: none;
