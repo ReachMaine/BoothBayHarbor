@@ -309,6 +309,9 @@ footer .bbh-menu-footer li {
   width: 100%;
   text-align: center; }
 
+.post-content ul.nav-pills, .post-content ul.tab-content {
+  padding-left: 0px; }
+
 /*****  listing single *****/
 .listing-detail {
   background-color: white; }
