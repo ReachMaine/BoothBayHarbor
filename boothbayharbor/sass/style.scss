@@ -212,6 +212,12 @@ footer .bbh-menu-footer {
     padding-left: 0px;
   }
 }
+// search page archive
+.search-results .post {
+  .post-image {
+    background-size: contain;
+  }
+}
 /*****  listing single *****/
 .listing-detail {
   background-color: white;

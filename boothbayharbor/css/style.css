@@ -312,6 +312,9 @@ footer .bbh-menu-footer li {
 .post-content ul.nav-pills, .post-content ul.tab-content {
   padding-left: 0px; }
 
+.search-results .post .post-image {
+  background-size: contain; }
+
 /*****  listing single *****/
 .listing-detail {
   background-color: white; }
