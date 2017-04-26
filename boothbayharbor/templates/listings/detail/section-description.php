@@ -239,6 +239,7 @@ foreach( $social_networks as $key => $title ) {
 <?php if ($two_cols) { ?>
 			</div><!-- /.col-* -->
 		</div><!-- /.row -->
+<?php } ?>
 		<?php if ( ! empty( $post->post_content ) ) : ?>
 			<div class="listing-detail-section" id="listing-detail-section-description">
 					<div class="listing-detail-description-wrapper">
@@ -247,4 +248,3 @@ foreach( $social_networks as $key => $title ) {
 			</div><!-- /.listing-detail-section -->
 
 		<?php endif; ?>
-<?php } ?>
