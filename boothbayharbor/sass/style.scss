@@ -11,6 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 @import "partials/settings";
 @import "partials/event-on";
 @import "partials/responsive";
+@import "partials/memberlists";
 
 // topbar
 .header .header-bar {
@@ -329,6 +330,11 @@ img.listing-title-logo {
   }
   label {
     width: 100%;
+  }
+  .wpcf7-form-control.wpcf7-ctct {
+    br {
+      display: none;
+    }
   }
 }
 // easy responsive tab stylying {

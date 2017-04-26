@@ -106,9 +106,15 @@ button,
 .widget .widget-pb {
   padding-bottom: 30px; }
 
-.post-content .widget ul li {
-  border-bottom: 0px;
-  padding: 4px 0; }
+.post-content .widget ul, .post-content ol {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+  .post-content .widget ul li, .post-content ol li {
+    border-bottom: 0px;
+    padding: 4px 0; }
+.post-content .widget ul {
+  list-style-type: disc;
+  padding-left: 40px; }
 
 /*** end settings ***/
 .eo_card_box > div:nth-child(1) {
@@ -149,6 +155,17 @@ p#slider_1_mebox_subtitle {
     left: 0;
     width: 100%;
     height: 100%; }
+
+/* styling for the list of members by custom shortcodes */
+/* members in category shortcode list
+* used on the weddings page */
+.bbh_member_in_cat_wrapper ul.bbh_members_in_cat {
+  list-style-type: none; }
+
+/* styling for the list of categories in a type
+* used on the member directory page */
+.bbh_listcat_wrapper ul.bbh_listcats {
+  list-style-type: none; }
 
 .header .header-bar {
   background-color: #E86C1F; }
@@ -376,6 +393,8 @@ img.listing-title-logo {
   width: 100%; }
 .wpcf7 label {
   width: 100%; }
+.wpcf7 .wpcf7-form-control.wpcf7-ctct br {
+  display: none; }
 
 .osc-res-tab .tab-content li {
   width: 100%; }
