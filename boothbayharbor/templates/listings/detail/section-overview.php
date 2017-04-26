@@ -11,12 +11,6 @@
                   switch ( $key ) {
                     case 'listing_yearround':
                     case 'listing_petfriendly':
-                      $kval =  wp_kses( $attribute['value'], wp_kses_allowed_html( 'post' ));
-                        if  ($kval == 'Yes')  {
-                        } else {
-                          $displayp = false;
-                        }
-                      break;
                     case 'listing_listing_category':
                     case 'listing_locations':
                         $displayp = false; // dont show category
