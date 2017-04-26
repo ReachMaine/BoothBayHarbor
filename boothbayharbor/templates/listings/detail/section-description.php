@@ -54,12 +54,15 @@
 	<?php $website = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'website', true ); ?>
 	<?php $phone = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'phone', true ); ?>
 	<?php $address = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'address', true ); ?>
- <?php if ( ! empty( $phone ) || ! empty( $address ) || ! empty( $email ) || ! empty( $website ) )    {?>
+	<?php $allyear = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'yearround', true ); ?>
+	<?php $pets = get_post_meta( get_the_ID(), INVENTOR_LISTING_PREFIX . 'petfriendly', true ); ?>
+ <?php if ( ! empty( $phone ) || ! empty( $address ) || ! empty( $email ) || ! empty( $website ) || ! empty($pets) || ! empty($allyear) )    {?>
 	<div class="listing-detail-contact">
 			<ul>
 					<?php if ( ! empty( $address ) ): ?>
 							<li class="address">
 									<?php echo wp_kses( nl2br( $address ), wp_kses_allowed_html( 'post' ) ); ?>
+							</li>
 					<?php endif; ?>
 					<?php if ( ! empty( $phone ) ): ?>
 							<li class="phone"><i class="fa fa-phone"></i>
@@ -81,6 +84,12 @@
 											<a href="<?php echo esc_attr( $website ); ?>" target="_blank"><?php echo esc_attr($website_display); ?></a>
 							</li>
 					<?php endif; ?>
+					<?php if (! empty($allyear)) { ?>
+						<li class="yearround"><i class="fa fa-snowflake-o"></i> Open Year Round</li>
+					<?php } ?>
+					<?php if (! empty($pets)) { ?>
+						<li class="petfriendly"><i class="fa fa-paw"></i> Pet Friendly</li>
+					<?php } ?>
 			</ul>
 	</div><!-- /.listing-detail-contact -->
 <?php } ?>
