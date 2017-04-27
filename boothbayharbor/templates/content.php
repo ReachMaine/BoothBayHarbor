@@ -32,9 +32,9 @@
             <?php if ( has_category() ) : ?>
                 <div class="post-meta-categories"><i class="fa fa-tags"></i> <?php echo wp_kses( get_the_category_list( ', ' ), wp_kses_allowed_html( 'post' ) ); ?></div><!-- /.post-meta-categories -->
             <?php endif; ?>
-            <?php if ( comments_open() ): ?>
+            <?php /* if ( comments_open() ):  ?>
                 <div class="post-meta-comments"><i class="fa fa-comments"></i> <?php comments_number(); ?></div><!-- /.post-meta-comments -->
-            <?php endif; ?>
+            <?php endif; */ ?>
             <div class="post-meta-more"><a href="<?php echo esc_attr( get_the_permalink() ); ?>"><?php echo esc_attr__( 'Read more', 'superlist' ); ?> <i class="fa fa-chevron-right"></i></a></div><!-- /.post-meta-more -->
         </div><!-- /.post-meta -->
 
