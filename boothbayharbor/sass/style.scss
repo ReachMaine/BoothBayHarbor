@@ -196,9 +196,21 @@ footer .bbh-menu-footer {
     border-bottom: 0px; // take off line under a tags
 }
 // listing box used  as featured image on home page....
+
 .listing-box-background:before {
   background: none;
 }
+.widget_listings {
+  .listing-container {
+    .listing-box-background {
+      .listing-box-label-bottom{
+        display: none;
+      }
+    }
+  }
+
+}
+
 .listing-box:hover .listing-box-title {
   background-color: $bbh-turq;
 }
@@ -281,9 +293,11 @@ img.listing-title-logo {
 }
 
 /**** archive ****/
-.listings-row {
-  .listing-container:nth-child(2n+1) {
-    clear: both;
+.archive {
+  .listings-row {
+    .listing-container:nth-child(2n+1) {
+      clear: both;
+    }
   }
 }
 

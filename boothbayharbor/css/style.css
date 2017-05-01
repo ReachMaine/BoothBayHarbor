@@ -301,6 +301,9 @@ footer .bbh-menu-footer li {
 .listing-box-background:before {
   background: none; }
 
+.widget_listings .listing-container .listing-box-background .listing-box-label-bottom {
+  display: none; }
+
 .listing-box:hover .listing-box-title {
   background-color: #0084C7; }
 
@@ -369,7 +372,7 @@ img.listing-title-logo {
   margin-bottom: 0px; }
 
 /**** archive ****/
-.listings-row .listing-container:nth-child(2n+1) {
+.archive .listings-row .listing-container:nth-child(2n+1) {
   clear: both; }
 
 .listing-row {
