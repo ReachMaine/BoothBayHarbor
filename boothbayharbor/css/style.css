@@ -179,6 +179,14 @@ p#slider_1_mebox_subtitle {
   background-color: white;
   border: 1px solid #efefef; }
 
+/* listings admin styling */
+/* my listings */
+.listings-system .listing-system-row .listing-system-row-image a {
+  background-size: contain; }
+.listings-system .listing-system-row .listing-system-row-image a:hover:after {
+  content: none; }
+
+/* end listings admin styling */
 .header .header-bar {
   background-color: #E86C1F; }
   .header .header-bar .header-bar-left .sow-features-feature {
