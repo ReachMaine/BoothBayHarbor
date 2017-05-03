@@ -38,3 +38,11 @@ p#slider_1_mebox_subtitle {
     text-transform: capitalize; //capitalize month in dates
   }
 }
+
+// submitting event /action user
+.eventon_au_form_section {
+  input.fullwidth  {
+    margin-left: 0px; // counter act theme's .fullwidth settings
+    margin-right: 0px;
+  }
+}

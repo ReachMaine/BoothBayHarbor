@@ -143,6 +143,10 @@ p#slider_1_mebox_subtitle {
 .eo_card_box .eo_card_sotitle {
   text-transform: capitalize; }
 
+.eventon_au_form_section input.fullwidth {
+  margin-left: 0px;
+  margin-right: 0px; }
+
 .responsive-video-iframe {
   position: relative;
   height: 0;
