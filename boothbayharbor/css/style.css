@@ -186,6 +186,9 @@ p#slider_1_mebox_subtitle {
 .listings-system .listing-system-row .listing-system-row-image a:hover:after {
   content: none; }
 
+.cmb-row.cmb2-id-listing-brand-color {
+  display: none; }
+
 /* end listings admin styling */
 .header .header-bar {
   background-color: #E86C1F; }

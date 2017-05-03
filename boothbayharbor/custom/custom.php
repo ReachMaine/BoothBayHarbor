@@ -159,3 +159,16 @@ if (!function_exists('bbh_members_in_cat')) {
 
 
 add_shortcode( 'bbh_members_in_cat', 'bbh_members_in_cat' );
+
+// dont want to show all submission steps on front end.
+add_filter ('inventor_submission_steps', 'bbh_inventor_submission',10, 2 );
+function bbh_inventor_submission($steps, $post_type) {
+	return array(
+		 'general' => $steps['general'],
+		 'branding' => $steps['branding'],
+		 'contact' => $steps['contact'],
+		 'social'  => $steps['social'],
+		 'gallery' => $steps['gallery'],
+
+ );
+}
