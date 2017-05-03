@@ -169,6 +169,7 @@ function bbh_inventor_submission($steps, $post_type) {
 		 'contact' => $steps['contact'],
 		 'social'  => $steps['social'],
 		 'gallery' => $steps['gallery'],
-
+		 'round' => $steps['round'],
+		 'petfriendly' => $steps['petfriendly'],
  );
 }
