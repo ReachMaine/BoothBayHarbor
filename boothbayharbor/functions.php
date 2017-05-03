@@ -6,7 +6,8 @@
  * @since Superlist Child 1.0.0
  */
 require_once(get_stylesheet_directory().'/custom/custom.php'); // custom shortcodes, etc
-require_once(get_stylesheet_directory().'/custom/branding.php'); // login screen
+require_once(get_stylesheet_directory().'/custom/branding.php'); // WP back end login screen
+require_once(get_stylesheet_directory().'/custom/language.php');
 
 // trying to remove buildin sections we dont want from food, since its a built in type.
  add_action( 'cmb2_init', 'remove_metabox', 11 );
