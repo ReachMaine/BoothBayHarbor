@@ -164,12 +164,13 @@ add_shortcode( 'bbh_members_in_cat', 'bbh_members_in_cat' );
 add_filter ('inventor_submission_steps', 'bbh_inventor_submission',10, 2 );
 function bbh_inventor_submission($steps, $post_type) {
 	return array(
+
 		 'general' => $steps['general'],
-		 'branding' => $steps['branding'],
+		 //'branding' => $steps['branding'], //slogan & logo
 		 'contact' => $steps['contact'],
 		 'social'  => $steps['social'],
-		 'gallery' => $steps['gallery'],
+		 //'gallery' => $steps['gallery'],
 		 'round' => $steps['round'],
-		 'petfriendly' => $steps['petfriendly'],
+ 		'petfriendly' => $steps['petfriendly'],
  );
 }
