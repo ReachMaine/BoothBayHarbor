@@ -8,6 +8,7 @@
 require_once(get_stylesheet_directory().'/custom/custom.php'); // custom shortcodes, etc
 require_once(get_stylesheet_directory().'/custom/branding.php'); // WP back end login screen
 require_once(get_stylesheet_directory().'/custom/language.php');
+require_once(get_stylesheet_directory().'/custom/woo.php'); // woocommerce
 
 // trying to remove buildin sections we dont want from food, since its a built in type.
  add_action( 'cmb2_init', 'remove_metabox', 11 );

@@ -189,6 +189,47 @@ p#slider_1_mebox_subtitle {
   background-color: white;
   border: 1px solid #efefef; }
 
+/***  Woocommerce styling  ---------------------------------------------- */
+.woocommerce #respond input#submit.alt,
+.woocommerce #primary a.button.alt,
+.woocommerce-page #primary a.button.alt,
+.woocommerce #primary button.button.alt,
+.woocommerce-page #primary input.button.alt,
+.woocommerce-page #primary input#place_order,
+.woocommerce #primary input.button.alt {
+  background-color: #0084C7; }
+
+.woocommerce #respond input#submit,
+.woocommerce-page #primary a.button,
+.woocommerce #primary a.button,
+.woocommerce-page #primary button.button,
+.woocommerce #primary button.button,
+.woocommerce #primary input.button,
+.woocommerce-page #primary input.button,
+.woocommerce #primary .woocommerce-message .button {
+  background-color: #64bfec; }
+
+#primary .woocommerce-message {
+  border-top-color: #E86C1F; }
+#primary .woocommerce-message::before {
+  color: #E86C1F; }
+
+.product .woocommerce-product-gallery__image--placeholder img {
+  max-width: 200px; }
+
+@media (min-width: 769px) {
+  .woocommerce #primary div.product div.images,
+  .woocommerce div.product div.images,
+  .woocommerce-page #primary div.product div.images,
+  .woocommerce-page div.product div.images {
+    width: 25%; }
+
+  .woocommerce #primary div.product div.summary,
+  .woocommerce div.product div.summary,
+  .woocommerce-page #primary div.product div.summary,
+  .woocommerce-page div.product div.summary {
+    width: 70%; } }
+/*** end Woocommerce styling ****/
 /* listings admin styling */
 /* my listings */
 .listings-system .listing-system-row .listing-system-row-image a {
