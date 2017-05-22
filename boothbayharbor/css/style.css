@@ -273,6 +273,10 @@ p#slider_1_mebox_subtitle {
   .bbh-menu-homepage #menu-main-types-menu li a {
     color: white; }
 
+.home .owl-carousel .inventor-slider-item-info-text {
+  position: absolute;
+  right: 20px; }
+
 footer .bbh-menu-footer li:hover i::before, footer .bbh-menu-footer li:hover span::before, footer .bbh-menu-footer li:hover {
   color: white !important;
   transition: color .4s; }
@@ -566,6 +570,9 @@ img.listing-title-logo {
 
   .bbh-menu-icons.bbh-bkg-grey {
     margin-top: -44px; } }
+@media (min-width: 767px) {
+  .home .owl-carousel .inventor-slider-item-info-text {
+    top: 200px; } }
 @media (min-width: 768px) {
   .hide-desktop {
     display: none !important; }
@@ -594,16 +601,21 @@ img.listing-title-logo {
 
   .submenu-dark .header-navigation .nav > li .sub-menu:after, .submenu-dark .header-navigation .footer-top .widget.widget_nav_menu ul > li .sub-menu:after, .footer-top .widget.widget_nav_menu .submenu-dark .header-navigation ul > li .sub-menu:after, .submenu-dark .header-navigation .footer-bottom .widget.widget_nav_menu ul > li .sub-menu:after, .footer-bottom .widget.widget_nav_menu .submenu-dark .header-navigation ul > li .sub-menu:after {
     border-bottom-color: white; } }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .home .owl-carousel {
     height: 350px !important; }
     .home .owl-carousel .inventor-slider-item-image {
       height: 350px !important; }
+    .home .owl-carousel .inventor-slider-item-info-text {
+      top: 80px; }
   .home .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
     font-size: 2em; } }
 @media (max-width: 767px) {
   .hide-mobile {
     display: none !important; }
+
+  .header-sticky .header {
+    height: 88px; }
 
   .bbh-menu-across ul.menu li {
     display: block;
@@ -643,6 +655,8 @@ img.listing-title-logo {
     height: 200px !important; }
     .home .owl-carousel .inventor-slider-item-image {
       height: 200px !important; }
+    .home .owl-carousel .inventor-slider-item-info-text {
+      top: 30px; }
   .home .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
     font-size: 2em; }
 

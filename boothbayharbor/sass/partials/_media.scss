@@ -91,7 +91,12 @@
     margin-top: -44px;
   }
 }
-
+ @media (min-width:767px) {
+  // homepage slider using text desc as photo credit.  move to bottom-right
+  .home .owl-carousel .inventor-slider-item-info-text {
+  	top: 200px;
+  }
+}
 @media (min-width:768px) { // tablet & desktop
 
     .hide-desktop {
@@ -129,13 +134,18 @@
       border-bottom-color: white;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .home {
     .owl-carousel {
       height: 350px !important;
       .inventor-slider-item-image {
         height: 350px !important;
+
       }
+      .inventor-slider-item-info-text { // photocredit
+            top: 80px;
+        }
+
     }
     .bbh-memsearch-short.widget_inventor_cover .inventor-cover {
       //height: 225px;
@@ -150,6 +160,9 @@
  @media (max-width: 767px) { // mobile
    .hide-mobile {
      display: none!important;
+   }
+   .header-sticky .header {
+     height: 88px;
    }
    .bbh-menu-across ul.menu li {
       display: block;
@@ -206,6 +219,9 @@
        height: 200px !important;
        .inventor-slider-item-image {
          height: 200px !important;
+       }
+       .inventor-slider-item-info-text {
+         top: 30px;
        }
      }
      .bbh-memsearch-short.widget_inventor_cover .inventor-cover {

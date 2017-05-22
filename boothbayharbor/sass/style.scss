@@ -68,7 +68,15 @@ License URI: http://www.gnu.org/licenses/gpl.html
     }
   }
 }
-
+// front page slider - also see owl-carousel in media
+.home {
+  .owl-carousel {
+     .inventor-slider-item-info-text { // photocredit
+      position: absolute;
+      right: 20px;
+    }
+  }
+}
 //Type menu in footer
 footer .bbh-menu-footer {
   li:hover i::before, li:hover span::before, li:hover  {
