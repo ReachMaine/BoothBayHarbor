@@ -204,6 +204,15 @@ footer .bbh-menu-footer {
 .post-detail .post-content a  {
     border-bottom: 0px; // take off line under a tags
 }
+
+.thumbnail-links {
+  .widget_sow-image {
+    margin-bottom: 10px !important;
+  }
+  .widget_text {
+    text-align: center;
+  }
+}
 // listing box used  as featured image on home page....
 
 .listing-box-background:before {
@@ -308,6 +317,15 @@ img.listing-title-logo {
 }
 
 /**** archive ****/
+.collapseomatic_content {
+  margin-left: 0px !important;
+  h3 {
+    clear: both;
+    font-weight: bold;
+    margin-bottom: 10px !important;
+  }
+}
+
 .archive {
   .listings-row {
     .listing-container:nth-child(2n+1) {
