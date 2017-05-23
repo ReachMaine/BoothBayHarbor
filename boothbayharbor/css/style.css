@@ -522,6 +522,8 @@ img.listing-title-logo {
       margin-right: 0px;
       font-size: 1.25em;
       width: inherit; }
+  .footer-top .widget-space {
+    margin-top: 15px; }
 
 .reach-logo:before {
   content: url("images/reach-favicon.png");
