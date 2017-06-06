@@ -372,8 +372,14 @@ footer .bbh-menu-footer li {
 .listing-box-background:before {
   background: none; }
 
-.widget_listings .listing-container .listing-box-background .listing-box-label-bottom {
-  display: none; }
+.widget_listings .listing-container .listing-box {
+  height: 200px;
+  overflow: visible;
+  margin-bottom: 30px; }
+  .widget_listings .listing-container .listing-box .listing-box-background .listing-box-label-bottom {
+    display: none; }
+  .widget_listings .listing-container .listing-box .listing-box-title {
+    box-shadow: 1px 1px 1px #b3b3b3; }
 
 .listing-box:hover .listing-box-title {
   background-color: #0084C7; }

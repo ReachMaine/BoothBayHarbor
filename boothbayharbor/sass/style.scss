@@ -220,9 +220,17 @@ footer .bbh-menu-footer {
 }
 .widget_listings {
   .listing-container {
-    .listing-box-background {
-      .listing-box-label-bottom{
-        display: none;
+    .listing-box {
+      height: 200px;
+      overflow: visible;
+      margin-bottom: 30px;
+      .listing-box-background {
+        .listing-box-label-bottom{
+          display: none;
+        }
+      }
+      .listing-box-title {
+        box-shadow: 1px 1px 1px #b3b3b3;
       }
     }
   }
