@@ -2,11 +2,11 @@
 
 	<div class="detail-banner-info">
 		<?php /* */
-			$ptyp = $post->post_type;
 			$backp = "";
 			//$backp .= '<div class="detail-back-to-type">';
-			$backp .= '<a href="'.get_site_url().'/listings/?listing_types='.$ptyp.'">'.ucfirst($ptyp)." -> ";
-			$backp .=  '</a>';
+			$backp .= '<a href="'.get_post_type_archive_link( get_post_type() ).'">'.get_post_type_object( get_post_type() )->labels->name.'</a>' ;
+			$backp .= " / ";
+
 			//$backp .= '</div>';
 		?>
 			<?php $listing_category = Inventor_Query::get_listing_category_name( get_the_ID(), ',', true ); ?>
