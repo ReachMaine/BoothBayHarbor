@@ -355,6 +355,19 @@ footer .bbh-menu-footer li {
   margin-top: 0px; }
 
 /**** content ****/
+.eventon_desc_in a.bbhcc-full-button,
+a.bbhcc-full-button {
+  color: white !important;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  margin: auto;
+  padding: 15px !important;
+  background-color: #044357;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em; }
+
 .main-inner {
   padding-top: 20px; }
 
