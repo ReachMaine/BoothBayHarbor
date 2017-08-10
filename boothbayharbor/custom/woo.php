@@ -31,3 +31,11 @@ function custom_fix_thumbnail() {
 	return $src;
 	}
 }
+
+// remove additional information tab
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+function woo_remove_product_tabs( $tabs ) {
+    unset( $tabs['additional_information'] );  	// Remove the additional information tab
+    return $tabs;
+
+}
