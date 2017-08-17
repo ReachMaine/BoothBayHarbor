@@ -666,14 +666,26 @@ img.listing-title-logo {
     max-width: 800px;
     margin: auto; } }
 @media (max-width: 519px) {
+  h1 {
+    font-size: 1.5em !important; }
+
+  .post-type-archive .listing-container {
+    width: 100% !important; }
+    .post-type-archive .listing-container .listing-row h2.listing-row-title {
+      font-size: 1em; }
+    .post-type-archive .listing-container .listing-row .listing-row-body .listing-row-content .bbh-listing-detail-contact ul li.phone {
+      clear: both; }
+
   .listing-row-image,
   .listing-row-body,
   .listing-row-properties {
     display: block; }
 
   .listing-row-image {
-    height: 100px;
-    width: 100%; }
+    height: 65px;
+    width: 65px;
+    float: left;
+    margin: 0px 12px 0px 5px; }
 
   .header-bar-left .widget {
     padding: 0px; }

@@ -178,10 +178,24 @@
  }
 
  @media (max-width: 519px) { // smaller mobile
+   h1 {
+     font-size: 1.5em!important;
+   }
    .bbh-menu-across {
      ul.menu {
        li {
         //  max-width: 400px;
+       }
+     }
+   }
+   .post-type-archive .listing-container {
+     width: 100%!important;
+     .listing-row {
+       h2.listing-row-title {
+         font-size: 1em;
+       }
+       .listing-row-body .listing-row-content .bbh-listing-detail-contact ul li.phone {
+         clear: both;
        }
      }
    }
@@ -191,8 +205,10 @@
      display: block;
    }
    .listing-row-image {
-     height: 100px;
-     width: 100%;
+     height: 65px;
+     width: 65px;
+     float: left;
+     margin: 0px 12px 0px 5px;
    }
 
    .header-bar-left .widget {
