@@ -13,6 +13,14 @@
 p#slider_1_mebox_subtitle {
   display: none; //hide the "meta box" that can hold extra information on the homepage upcoming events.
 }
+// slider
+.eoas_evo_pop_body { // since doesnt use images for calendar, hide the default empty image on the popup
+  .eoas_evcal_evdata_img {
+    height: 0px;
+    background-image: none;
+    display: none;
+  }
+}
 
 .eo_card_title {
   background-color: #003e52;

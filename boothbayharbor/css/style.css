@@ -126,6 +126,11 @@ button,
 p#slider_1_mebox_subtitle {
   display: none; }
 
+.eoas_evo_pop_body .eoas_evcal_evdata_img {
+  height: 0px;
+  background-image: none;
+  display: none; }
+
 .eo_card_title {
   background-color: #003e52; }
   .eo_card_title div {
