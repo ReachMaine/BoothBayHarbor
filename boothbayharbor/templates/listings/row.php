@@ -77,7 +77,7 @@
         								}
                         $website_display = "Website";
                          echo '<li class="website">';
-                          echo '<button href="'.esc_attr( $website ).'" target="_blank">'.esc_attr($website_display).'</button>';
+                          echo '<a href="'.esc_attr( $website ).'" target="_blank"><button>'.esc_attr($website_display).'</button></a>';
                          echo '</li>';
                       }
                     echo '</ul>';
