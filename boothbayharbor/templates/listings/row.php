@@ -75,8 +75,9 @@
                         if (substr($website_display, -1) == '/') { // check for trailing slash
         										$website_display = substr($website_display , 0, -1);
         								}
+                        $website_display = "Website";
                          echo '<li class="website">';
-                          echo '<a href="'.esc_attr( $website ).'" target="_blank">'.esc_attr($website_display).'</a>';
+                          echo '<button href="'.esc_attr( $website ).'" target="_blank">'.esc_attr($website_display).'</button>';
                          echo '</li>';
                       }
                     echo '</ul>';

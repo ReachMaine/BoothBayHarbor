@@ -400,7 +400,19 @@ img.listing-title-logo {
         ul {
           list-style: none;
           padding-left: 0px;
+          .phone, .website {
+            line-height: 2em;
+            margin-bottom: 0px;
+          }
+          .website button {
+            width: 100%;
+          }
         }
+      }
+      .read-more-link {
+        //text-align: right;
+        //margin-right: 10px;
+        margin-top: 0px;
       }
     }
   } // listing container

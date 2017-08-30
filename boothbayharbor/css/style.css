@@ -519,6 +519,17 @@ img.listing-title-logo {
     .post-type-archive .listing-container .listing-row-body .bbh-listing-detail-contact ul {
       list-style: none;
       padding-left: 0px; }
+      .archive.tax-listing_categories .listing-container .listing-row-body .bbh-listing-detail-contact ul .phone, .archive.tax-listing_categories .listing-container .listing-row-body .bbh-listing-detail-contact ul .website,
+      .post-type-archive .listing-container .listing-row-body .bbh-listing-detail-contact ul .phone,
+      .post-type-archive .listing-container .listing-row-body .bbh-listing-detail-contact ul .website {
+        line-height: 2em;
+        margin-bottom: 0px; }
+      .archive.tax-listing_categories .listing-container .listing-row-body .bbh-listing-detail-contact ul .website button,
+      .post-type-archive .listing-container .listing-row-body .bbh-listing-detail-contact ul .website button {
+        width: 100%; }
+    .archive.tax-listing_categories .listing-container .listing-row-body .read-more-link,
+    .post-type-archive .listing-container .listing-row-body .read-more-link {
+      margin-top: 0px; }
 
 .wpcf7 input[type=tel] {
   width: 100%; }
