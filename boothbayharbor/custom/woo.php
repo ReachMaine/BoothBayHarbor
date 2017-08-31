@@ -39,3 +39,11 @@ function woo_remove_product_tabs( $tabs ) {
     return $tabs;
 
 }
+// remove price if zero (used for membership product where all cost comes from add ons)
+add_filter( 'woocommerce_get_price_html', 'reach_remove_zero_prices', 10, 2 );
+function reach_remove_zero_prices( $price, $product ) {
+  if (!$product->get_regular_price()) {
+    $price = '';
+  }
+  return $price;
+}
