@@ -221,6 +221,14 @@ p#slider_1_mebox_subtitle {
 
 .product .woocommerce-product-gallery__image--placeholder img {
   max-width: 200px; }
+.product .product-addon h3.addon-name {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin-bottom: 0px; }
+.product .product-addon p.form-row {
+  margin-bottom: 0px; }
+  .product .product-addon p.form-row label {
+    margin-bottom: 0px; }
 
 @media (min-width: 769px) {
   .woocommerce #primary div.product div.images,
