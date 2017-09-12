@@ -271,7 +271,8 @@ p#slider_1_mebox_subtitle {
   background-color: #044357;
   box-shadow: 0px 2px 3px #002733; }
   .page-wrapper .header .header-wrapper .header-logo img {
-    max-height: initial; }
+    max-height: initial;
+    max-width: initial; }
 
 .submenu-dark .header-navigation .nav > li .sub-menu li:hover > a, .submenu-dark .header-navigation .nav > li .sub-menu li > a i, .submenu-dark .header-navigation .nav > li .sub-menu li > a span {
   color: #64bfec !important; }
