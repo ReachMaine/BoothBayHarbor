@@ -88,12 +88,14 @@ if (!function_exists('bbh_listing_categories_type')) {
 			if ($title) {
 			$html_out .= '<h4 class="bbh_listcat_title">'.$title."</h3>";
 		}
-		$html_out .= "<!-- type is: ".$type."-->";
+		//$html_out .= "<!-- type is: ".$type."-->";
 			//echo "<pre>"; var_dump($categories); echo "</pre>";
 		$html_out .= '<ul class="bbh_listcats">';
 		foreach ( $categories as $cat ) {
 		    $html_out .= '<li class="bbh_listcat">';
-					$html_out .= '<a href="'.get_category_link($cat->term_id).'" >';
+						//$html_out .= "<!-- term_id is: ".$cat->term_id." using term_link -->";
+						//$html_out .= '<a href="'.get_category_link($cat->term_id).'" >';
+						$html_out .= '<a href="'.get_term_link($cat->term_id).'" >';
 						$html_out .= $cat->name;
 					$html_out .= '</a>';
 				$html_out .= '</li>';
