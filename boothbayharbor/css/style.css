@@ -686,8 +686,12 @@ img.listing-title-logo {
     max-width: 800px;
     margin: auto; } }
 @media (max-width: 519px) {
-  h1 {
+  h1:not(.sow-headline) {
     font-size: 1.5em !important; }
+
+  h1.sow-headline {
+    font-size: 3em !important;
+    line-height: 1em !important; }
 
   .post-type-archive .listing-container {
     width: 100% !important; }

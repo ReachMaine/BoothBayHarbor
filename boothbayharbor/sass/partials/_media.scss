@@ -178,8 +178,12 @@
  }
 
  @media (max-width: 519px) { // smaller mobile
-   h1 {
+   h1:not(.sow-headline) {
      font-size: 1.5em!important;
+   }
+   h1.sow-headline {
+     font-size: 3em!important;
+     line-height: 1em!important;
    }
    .bbh-menu-across {
      ul.menu {
