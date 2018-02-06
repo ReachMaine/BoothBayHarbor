@@ -267,10 +267,9 @@ p#slider_1_mebox_subtitle {
     .header .header-bar .header-bar-right .FOL-menu-item {
       margin-bottom: 3px;
       background-color: rgba(226, 198, 180, 0.75);
-      color: black;
       border: 1px solid white; }
       .header .header-bar .header-bar-right .FOL-menu-item a {
-        color: black;
+        color: black !important;
         padding-right: 4px; }
         .header .header-bar .header-bar-right .FOL-menu-item a .FOL-menu-icon {
           padding-right: 4px; }

@@ -34,14 +34,13 @@ License URI: http://www.gnu.org/licenses/gpl.html
         //margin-top: -2px;
         margin-bottom: 3px;
         background-color: rgba(226, 198, 180, .75);
-        color: black;
         border: 1px solid white;
 
         a {
           .FOL-menu-icon {
             padding-right: 4px;
           }
-          color: black;
+          color: black!important;
           padding-right: 4px;
         }
         a:hover {
