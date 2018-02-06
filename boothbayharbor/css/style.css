@@ -261,6 +261,9 @@ p#slider_1_mebox_subtitle {
     padding-right: 0px; }
   .header .header-bar .header-bar-right {
     margin-top: 3px; }
+    .header .header-bar .header-bar-right .widget .menu li a {
+      font-weight: lighter;
+      color: rgba(255, 255, 255, 0.8); }
     .header .header-bar .header-bar-right .FOL-menu-item {
       margin-bottom: 3px;
       background-color: rgba(226, 198, 180, 0.75);

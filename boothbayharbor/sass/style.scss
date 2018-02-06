@@ -26,6 +26,10 @@ License URI: http://www.gnu.org/licenses/gpl.html
     }
     .header-bar-right {
       margin-top: 3px;
+      .widget .menu li a {
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 0.8);
+      }
       .FOL-menu-item {
         //margin-top: -2px;
         margin-bottom: 3px;
