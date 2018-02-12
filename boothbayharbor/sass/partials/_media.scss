@@ -255,3 +255,9 @@
     margin-top: -43px;
   }
  }
+ @media (max-width: 460px) { // event smaller mobile
+   .page-wrapper .header .header-wrapper .header-logo img {
+     max-width: 262px;
+     max-height: 80px;
+   }
+ }

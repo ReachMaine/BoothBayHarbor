@@ -750,3 +750,7 @@ img.listing-title-logo {
 
   .bbh-menu-icons.bbh-bkg-grey {
     margin-top: -43px; } }
+@media (max-width: 460px) {
+  .page-wrapper .header .header-wrapper .header-logo img {
+    max-width: 262px;
+    max-height: 80px; } }
