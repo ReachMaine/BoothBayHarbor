@@ -128,6 +128,8 @@ if (!function_exists('bbh_members_in_cat')) {
 			//$html_out .= "<!-- cat ".$cat."-->";
 			$args = array(
 					'post_type' => array('dine', 'food', 'stay', 'play', 'live', 'shop'),
+					'orderby' => 'title', // 16Feb18 zig
+					'order' =>  'ASC', // 16Feb18 zig
 				   'tax_query' => array(
 						 array(
 								 'taxonomy' => 'listing_categories',
