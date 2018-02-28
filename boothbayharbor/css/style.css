@@ -582,6 +582,11 @@ img.listing-title-logo {
       width: inherit; }
   .footer-top .widget-space {
     margin-top: 15px; }
+  .footer-top .widget.widget_awesomeweatherwidget .awesome-weather-wrap {
+    padding-top: 30px; }
+    .footer-top .widget.widget_awesomeweatherwidget .awesome-weather-wrap .awesome-weather-header {
+      font-size: 16px;
+      font-weight: bold; }
 
 .reach-logo:before {
   content: url("images/reach-favicon.png");
