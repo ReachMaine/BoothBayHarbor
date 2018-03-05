@@ -291,15 +291,17 @@ p#slider_1_mebox_subtitle {
 .submenu-dark .header-navigation .nav > li .sub-menu li:hover > a, .submenu-dark .header-navigation .nav > li .sub-menu li > a i, .submenu-dark .header-navigation .nav > li .sub-menu li > a span {
   color: #64bfec !important; }
 
-.bbh-menu-homepage #menu-main-types-menu li:hover i::before, .bbh-menu-homepage #menu-main-types-menu li:hover span::before {
-  color: white !important;
-  transition: color .4s; }
-.bbh-menu-homepage #menu-main-types-menu li i::before, .bbh-menu-homepage #menu-main-types-menu li span::before {
-  transition: color .4s; }
-.bbh-menu-homepage #menu-main-types-menu li {
-  font-size: 31px; }
-  .bbh-menu-homepage #menu-main-types-menu li a {
-    color: white; }
+.bbh-menu-homepage {
+  margin-top: -51px; }
+  .bbh-menu-homepage #menu-main-types-menu li:hover i::before, .bbh-menu-homepage #menu-main-types-menu li:hover span::before {
+    color: white !important;
+    transition: color .4s; }
+  .bbh-menu-homepage #menu-main-types-menu li i::before, .bbh-menu-homepage #menu-main-types-menu li span::before {
+    transition: color .4s; }
+  .bbh-menu-homepage #menu-main-types-menu li {
+    font-size: 31px; }
+    .bbh-menu-homepage #menu-main-types-menu li a {
+      color: white; }
 
 .home .owl-carousel .inventor-slider-item-info-text {
   position: absolute;
@@ -320,8 +322,7 @@ footer .bbh-menu-footer li {
 .bbh-menu-icons.bbh-bkg-grey {
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
-  z-index: 2;
-  margin-top: -51px; }
+  z-index: 2; }
 
 .header-navigation .nav > li > a:hover, .header-navigation .footer-top .widget.widget_nav_menu ul > li > a:hover, .footer-top .widget.widget_nav_menu .header-navigation ul > li > a:hover, .header-navigation .footer-bottom .widget.widget_nav_menu ul > li > a:hover, .footer-bottom .widget.widget_nav_menu .header-navigation ul > li > a:hover {
   color: #E86C1F; }
@@ -334,6 +335,7 @@ footer .bbh-menu-footer li {
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 950px;
+  width: 100%;
   margin: auto; }
   .bbh-menu-across ul.menu li {
     display: inline-block; }
@@ -567,6 +569,13 @@ img.listing-title-logo {
     content: none; }
   .osc-res-tab .tab-content li a {
     display: initial; }
+
+.widget.widget_nav_menu.bbh-menu-bottom .menu {
+  margin: 0px;
+  justify-content: space-between; }
+  .widget.widget_nav_menu.bbh-menu-bottom .menu li a {
+    font-size: 22px;
+    border-bottom: 0px; }
 
 .footer-top {
   margin-top: 40px;

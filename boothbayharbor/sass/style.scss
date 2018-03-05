@@ -77,6 +77,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 //Type menu over slider on homepage
 .bbh-menu-homepage {
+  margin-top: -51px;
   #menu-main-types-menu { // ul
     li:hover i::before, li:hover span::before {
       color: white !important;
@@ -126,7 +127,7 @@ footer .bbh-menu-footer {
   background-color: rgba(0, 0, 0, .6);
   position: relative;
   z-index: 2;
-  margin-top: -51px;
+  //margin-top: -51px;
 }
 
 .header-navigation .nav > li > a:hover, .header-navigation .footer-top .widget.widget_nav_menu ul > li > a:hover, .footer-top .widget.widget_nav_menu .header-navigation ul > li > a:hover, .header-navigation .footer-bottom .widget.widget_nav_menu ul > li > a:hover, .footer-bottom .widget.widget_nav_menu .header-navigation ul > li > a:hover {
@@ -143,6 +144,7 @@ footer .bbh-menu-footer {
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 950px;
+    width: 100%; // zig 5Mar18
     margin: auto;
     li {
       display: inline-block;
@@ -217,6 +219,7 @@ footer .bbh-menu-footer {
   margin-top: 0px;
 }
 /**** content ****/
+
 .eventon_desc_in a.bbhcc-full-button,
 a.bbhcc-full-button {
   color: white!important;
@@ -471,6 +474,19 @@ img.listing-title-logo {
       }
     }
 }
+// bottom widget footer-area
+.widget.widget_nav_menu.bbh-menu-bottom {
+    .menu {
+      margin: 0px; // dont want to center here.
+      justify-content: space-between;
+      li a  {
+      //color: white;
+      font-size: 22px;
+      border-bottom: 0px;
+    }
+  }
+}
+
 //**** footer ****
 .footer-top  {
     margin-top: 40px;
