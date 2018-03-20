@@ -25,7 +25,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
         }
     }
     .header-bar-right {
-      margin-top: 3px;
+      margin-top: 8px; // 3px;
       .widget .menu li a {
         font-weight: lighter;
         color: rgba(255, 255, 255, 0.8);
@@ -50,7 +50,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
       }
 
-    }
+    } // end header-bar-right
+
     .header-bar-inner .widget .menu li a {
       font-size: 18px; // font-size for top bar
     }
