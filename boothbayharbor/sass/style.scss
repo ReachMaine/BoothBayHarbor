@@ -433,8 +433,11 @@ img.listing-title-logo {
             line-height: 2em;
             margin-bottom: 0px;
           }
-          .website button {
-            width: 100%;
+          .website {
+            width: 120px;
+            button {
+              width: 100%;
+            }
           }
         }
       }
