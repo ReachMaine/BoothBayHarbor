@@ -47,3 +47,6 @@ function reach_remove_zero_prices( $price, $product ) {
   }
   return $price;
 }
+
+// remove related products.  - now that we have more than one product
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
