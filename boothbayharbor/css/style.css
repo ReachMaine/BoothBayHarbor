@@ -221,6 +221,8 @@ p#slider_1_mebox_subtitle {
 
 .product .woocommerce-product-gallery__image--placeholder img {
   max-width: 200px; }
+.product .wc-box-office-ticket-form {
+  padding-top: 15px; }
 .product .product-addon h3.addon-name {
   font-size: 1.4em;
   font-weight: normal;
