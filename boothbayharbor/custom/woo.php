@@ -76,3 +76,9 @@ function bbh_add_content_specific_email( $order, $sent_to_admin, $plain_text, $e
     }
   }
 }
+
+add_action( 'woocommerce_thankyou', 'bbloomer_add_content_thankyou', 5 );
+
+function bbloomer_add_content_thankyou() {
+echo '<h5 class="h2thanks">Printing your Ticket</h5><p class="pthanks">Check your inbox and print out receipt as your ticket</p>';
+}
