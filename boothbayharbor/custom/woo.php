@@ -11,7 +11,7 @@ function woocommerce_support() {
 function skyverge_change_empty_cart_button_url() {
 	return get_site_url();
 }
-add_filter( 'woocommerce_return_to_shop_redirect', 'skyverge_change_empty_cart_button_url' );
+//add_filter( 'woocommerce_return_to_shop_redirect', 'skyverge_change_empty_cart_button_url' );
 
 // remove category on single product
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
