@@ -130,6 +130,7 @@ if (!function_exists('bbh_members_in_cat')) {
 					'post_type' => array('dine', 'food', 'stay', 'play', 'live', 'shop'),
 					'orderby' => 'title', // 16Feb18 zig
 					'order' =>  'ASC', // 16Feb18 zig
+					'posts_per_page' => -1, // show them all
 				   'tax_query' => array(
 						 array(
 								 'taxonomy' => 'listing_categories',

@@ -11,7 +11,7 @@ function woocommerce_support() {
 function skyverge_change_empty_cart_button_url() {
 	return get_site_url();
 }
-add_filter( 'woocommerce_return_to_shop_redirect', 'skyverge_change_empty_cart_button_url' );
+//add_filter( 'woocommerce_return_to_shop_redirect', 'skyverge_change_empty_cart_button_url' );
 
 // remove category on single product
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
@@ -46,4 +46,39 @@ function reach_remove_zero_prices( $price, $product ) {
     $price = '';
   }
   return $price;
+}
+
+// remove related products.  - now that we have more than one product
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+// for ticket products, add the line to emails to print this email as ticket.
+
+add_action( 'woocommerce_email_before_order_table', 'bbh_add_content_specific_email', 20, 4 );
+function bbh_add_content_specific_email( $order, $sent_to_admin, $plain_text, $email )  {
+  if (  in_array( $email->id, array('customer_processing_order', 'customer_on_hold_order', 'customer_invoice' ) ) ){
+    $display_print_this = false;
+    $ticket_product_ids   = array('19888',' 21276' ); // 19888 is test site, 21276 is live site ticket
+     // get the order line items
+      $line_items    = $order->get_items( apply_filters( 'woocommerce_admin_order_item_types', 'line_item' ) );
+      if ( ! is_array( $line_items ) || empty( $line_items ) ) {
+    		return;
+    	}
+      foreach ( $line_items as $line_item ) {
+    		$product_id = absint( $line_item['item_meta']['_product_id'][0] );
+        $product_id =  $line_item->get_product_id();
+    		if ( in_array( $product_id, $ticket_product_ids ) ) {
+          $display_print_this = true;
+        }
+
+  	} // end looping thought items.
+    if ($display_print_this) {
+      echo "<p>We look forward to seeing you.  You may print this email as your ticket.<p>";
+    }
+  }
+}
+
+add_action( 'woocommerce_thankyou', 'bbloomer_add_content_thankyou', 5 );
+
+function bbloomer_add_content_thankyou() {
+echo '<h5 class="h2thanks">Printing your Ticket</h5><p class="pthanks">Check your inbox and print out receipt as your ticket</p>';
 }
