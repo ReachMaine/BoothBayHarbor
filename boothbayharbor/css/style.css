@@ -346,21 +346,33 @@ footer .bbh-menu-footer li {
 .bbh-menu-icons .nav > li > a .sow-icon-ionicons,
 .bbh-menu-icons .nav > li > a .sow-icon-fontawesome,
 .bbh-menu-icons .nav > li > a .sow-icon-icomoon,
+.bbh-menu-icons .nav > li > a .fa,
 .bbh-menu-icons .menu > li > a .inventor-poi,
 .bbh-menu-icons .menu > li > a .sow-icon-ionicons,
 .bbh-menu-icons .menu > li > a .sow-icon-fontawesome,
-.bbh-menu-icons .menu > li > a .sow-icon-icomoon {
+.bbh-menu-icons .menu > li > a .sow-icon-icomoon,
+.bbh-menu-icons .menu > li > a .fa {
   padding-right: 5px; }
 .bbh-menu-icons .nav > li > a .inventor-poi:before,
 .bbh-menu-icons .nav > li > a .sow-icon-ionicons:before,
 .bbh-menu-icons .nav > li > a .sow-icon-fontawesome:before,
 .bbh-menu-icons .nav > li > a .sow-icon-icomoon:before,
+.bbh-menu-icons .nav > li > a .fa:before,
 .bbh-menu-icons .menu > li > a .inventor-poi:before,
 .bbh-menu-icons .menu > li > a .sow-icon-ionicons:before,
 .bbh-menu-icons .menu > li > a .sow-icon-fontawesome:before,
-.bbh-menu-icons .menu > li > a .sow-icon-icomoon:before {
+.bbh-menu-icons .menu > li > a .sow-icon-icomoon:before,
+.bbh-menu-icons .menu > li > a .fa:before {
   color: #64bfec;
   font-size: 1.1em; }
+
+#menu-main-menu i.fa {
+  position: static;
+  display: inline-block;
+  float: left;
+  margin-left: 0px;
+  margin-right: 4px;
+  font-size: 13px; }
 
 .bbh-memsearch-short.widget_inventor_cover #video-outer-wrap.inventor-cover {
   height: 0px; }

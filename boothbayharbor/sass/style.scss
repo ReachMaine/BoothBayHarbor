@@ -158,16 +158,28 @@ footer .bbh-menu-footer {
     .inventor-poi,
     .sow-icon-ionicons,
     .sow-icon-fontawesome,
-    .sow-icon-icomoon {
+    .sow-icon-icomoon,
+    .fa {
         padding-right: 5px;
     }
     .inventor-poi:before,
     .sow-icon-ionicons:before,
     .sow-icon-fontawesome:before,
-    .sow-icon-icomoon:before {
+    .sow-icon-icomoon:before,
+    .fa:before {
         color: $bbh-lighter-blue;
         font-size: 1.1em;
     }
+}
+#menu-main-menu {
+  i.fa {
+    position: static;
+    display: inline-block;
+    float: left;
+    margin-left: 0px;
+    margin-right: 4px;
+    font-size: 13px;
+  }
 }
 // header top widget area
 .bbh-memsearch-short.widget_inventor_cover {
