@@ -78,7 +78,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 //Type menu over slider on homepage
 .bbh-menu-homepage {
-  margin-top: -51px;
+  //margin-top: -51px; // zig 15jan18
   #menu-main-types-menu { // ul
     li:hover i::before, li:hover span::before {
       color: white !important;

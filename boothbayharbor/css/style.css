@@ -293,17 +293,15 @@ p#slider_1_mebox_subtitle {
 .submenu-dark .header-navigation .nav > li .sub-menu li:hover > a, .submenu-dark .header-navigation .nav > li .sub-menu li > a i, .submenu-dark .header-navigation .nav > li .sub-menu li > a span {
   color: #64bfec !important; }
 
-.bbh-menu-homepage {
-  margin-top: -51px; }
-  .bbh-menu-homepage #menu-main-types-menu li:hover i::before, .bbh-menu-homepage #menu-main-types-menu li:hover span::before {
-    color: white !important;
-    transition: color .4s; }
-  .bbh-menu-homepage #menu-main-types-menu li i::before, .bbh-menu-homepage #menu-main-types-menu li span::before {
-    transition: color .4s; }
-  .bbh-menu-homepage #menu-main-types-menu li {
-    font-size: 31px; }
-    .bbh-menu-homepage #menu-main-types-menu li a {
-      color: white; }
+.bbh-menu-homepage #menu-main-types-menu li:hover i::before, .bbh-menu-homepage #menu-main-types-menu li:hover span::before {
+  color: white !important;
+  transition: color .4s; }
+.bbh-menu-homepage #menu-main-types-menu li i::before, .bbh-menu-homepage #menu-main-types-menu li span::before {
+  transition: color .4s; }
+.bbh-menu-homepage #menu-main-types-menu li {
+  font-size: 31px; }
+  .bbh-menu-homepage #menu-main-types-menu li a {
+    color: white; }
 
 .home .owl-carousel .inventor-slider-item-info-text {
   position: absolute;
