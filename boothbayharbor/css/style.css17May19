@@ -670,7 +670,10 @@ img.listing-title-logo {
     margin: auto; }
 
   .widget.widget_nav_menu #menu-main-types-menu li {
-    font-size: 23px; } }
+    font-size: 23px; }
+
+  .bbh-menu-icons.bbh-bkg-grey {
+    margin-top: -44px; } }
 @media (min-width: 767px) {
   .home .owl-carousel .inventor-slider-item-info-text {
     top: 200px; } }
@@ -775,7 +778,10 @@ img.listing-title-logo {
     .home .owl-carousel .inventor-slider-item-info-text {
       top: 30px; }
   .home .bbh-memsearch-short.widget_inventor_cover .inventor-cover-title h1 {
-    font-size: 2em; } }
+    font-size: 2em; }
+
+  .bbh-menu-icons.bbh-bkg-grey {
+    margin-top: -43px; } }
 @media (max-width: 460px) {
   .page-wrapper .header .header-wrapper .header-logo img {
     max-width: 262px;
