@@ -266,6 +266,11 @@ a.bbhcc-full-button {
     text-align: center;
   }
 }
+.sow-image-container {
+  a {
+    flex-shrink: 0; // fix for IE flex container.
+  }
+}
 // listing box used  as featured image on home page....
 
 .listing-box-background:before {

@@ -427,6 +427,9 @@ a.bbhcc-full-button {
 .thumbnail-links .widget_text {
   text-align: center; }
 
+.sow-image-container a {
+  flex-shrink: 0; }
+
 .listing-box-background:before {
   background: none; }
 
