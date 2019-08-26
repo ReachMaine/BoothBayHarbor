@@ -188,3 +188,9 @@ function disable_gmap_views( $enabled, $metabox_id, $field_id, $post_type ) {
 
     return $enabled;
 }
+
+// add shortcode 
+function post_title_shortcode(){
+    return get_the_title();
+}
+add_shortcode('post_title','post_title_shortcode');
