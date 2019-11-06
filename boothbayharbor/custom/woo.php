@@ -82,3 +82,17 @@ add_action( 'woocommerce_thankyou', 'bbloomer_add_content_thankyou', 5 );
 function bbloomer_add_content_thankyou() {
 echo '<h5 class="h2thanks">Printing your Ticket</h5><p class="pthanks">Check your inbox and print out receipt as your ticket</p>';
 }
+
+// change the Add to cart text if in the marketing-sign-up category.
+/* add_filter( 'woocommerce_product_single_add_to_cart_text', 'bbloomer_custom_add_cart_button_single_product' );
+
+function bbloomer_custom_add_cart_button_single_product( $label ) {
+
+  global $product;
+  if ( has_term( 'category1', 'product_cat', $product->ID ) ) {
+  return 'Category 1 Add Cart';
+  } else {
+  return 'Category 2 Buy Now';
+  }
+
+} */

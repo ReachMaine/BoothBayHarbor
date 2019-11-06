@@ -223,14 +223,32 @@ p#slider_1_mebox_subtitle {
   max-width: 200px; }
 .product .wc-box-office-ticket-form {
   padding-top: 15px; }
-.product .product-addon h3.addon-name {
-  font-size: 1.4em;
-  font-weight: normal;
-  margin-bottom: 0px; }
-.product .product-addon p.form-row {
-  margin-bottom: 0px; }
-  .product .product-addon p.form-row label {
+.product .wc-pao-addon,
+.product .product-addon {
+  padding-bottom: 10px; }
+  .product .wc-pao-addon label.wc-pao-addon-name,
+  .product .wc-pao-addon h3.addon-name,
+  .product .product-addon label.wc-pao-addon-name,
+  .product .product-addon h3.addon-name {
+    font-size: 1.4em;
+    font-weight: 500;
     margin-bottom: 0px; }
+  .product .wc-pao-addon .wc-pao-addon-description p,
+  .product .product-addon .wc-pao-addon-description p {
+    margin-bottom: 0px;
+    color: #444; }
+  .product .wc-pao-addon p.form-row,
+  .product .product-addon p.form-row {
+    margin-bottom: 0px; }
+    .product .wc-pao-addon p.form-row label,
+    .product .product-addon p.form-row label {
+      margin-bottom: 0px;
+      font-size: 1em;
+      line-height: 1.2em; }
+      .product .wc-pao-addon p.form-row label input[type=checkbox],
+      .product .product-addon p.form-row label input[type=checkbox] {
+        height: 18px;
+        width: 18px; }
 
 form.woocommerce-checkout .woocommerce-billing-fields #billing_state_field #billing_state {
   display: block !important; }

@@ -42,16 +42,31 @@
     padding-top: 15px;
   }
   // product add ons.
+  .wc-pao-addon,
   .product-addon {
+    padding-bottom: 10px;
+    label.wc-pao-addon-name,
     h3.addon-name {
       font-size: 1.4em;
-      font-weight: normal;
+      font-weight: 500; // slightly bolder
       margin-bottom: 0px;
     }
-    p.form-row{
+    .wc-pao-addon-description {
+      p {
+        margin-bottom: 0px;
+        color: #444;
+      }
+    }
+    p.form-row {
       margin-bottom: 0px;
       label {
         margin-bottom: 0px;
+        font-size: 1em;
+        line-height: 1.2em;
+        input[type=checkbox] {
+          height: 18px;
+          width: 18px;
+        }
       }
     }
    }
