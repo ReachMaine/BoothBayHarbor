@@ -49,11 +49,11 @@ b {
   display: none; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 300; }
 
 h1, .document-title h1 {
-  font-size: 3em;
-  font-weight: 500; }
+  font-size: 3em; }
 
 h2, .post-detail h2 {
   font-size: 2.6em;
@@ -536,7 +536,6 @@ img.listing-title-logo {
   margin-left: 0px !important; }
   .collapseomatic_content h3 {
     clear: both;
-    font-weight: bold;
     margin-bottom: 10px !important; }
 
 .archive .listings-row .listing-container:nth-child(2n+1) {
