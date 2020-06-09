@@ -94,5 +94,20 @@ button,
     list-style-type: disc;
     padding-left: 40px;
   }
+  .widget ul.sow-slider-images {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+}
+@media (min-width:781px) {
+  .bbh-promo-row-left .panel-grid-cell:first-child {
+      max-width: 600px;
+      margin-left: auto;
+  }
+  .bbh-promo-row-right .panel-grid-cell:nth-child(2) { // second child
+      max-width: 600px;
+      margin-right: auto;
+  }
 }
 /*** end settings ***/
