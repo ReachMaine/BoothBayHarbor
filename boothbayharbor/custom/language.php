@@ -12,6 +12,12 @@
 								 break;
 						}
 				}
+				// default stuff
+				switch ($translated_text) { // strip off category from Archives title
+						 case  'Category: %s':
+							$translated_text = '%s';
+						 break;
+				}
 	    	return $translated_text;
 		}
 		add_filter( 'gettext', 'eai_change_theme_text', 20, 3 );
