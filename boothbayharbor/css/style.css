@@ -129,6 +129,16 @@ button,
     max-width: 600px;
     margin-right: auto; } }
 /*** end settings ***/
+/* styling for posts */
+body.archive.category #primary .post {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+  body.archive.category #primary .post .post-meta {
+    display: none; }
+
 .eo_card_box > div:nth-child(1) {
   display: none; }
 
