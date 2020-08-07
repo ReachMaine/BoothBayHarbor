@@ -72,8 +72,15 @@ License URI: http://www.gnu.org/licenses/gpl.html
         }
     }
 }
+.header-regular .header-navigation  {
+  .nav > li > a {
+    padding: 0 16px;
+  }
 
-.submenu-dark .header-navigation .nav > li .sub-menu li:hover > a, .submenu-dark .header-navigation .nav > li .sub-menu li > a i, .submenu-dark .header-navigation .nav > li .sub-menu li > a span {
+}
+.submenu-dark .header-navigation .nav > li .sub-menu li:hover > a,
+.submenu-dark .header-navigation .nav > li .sub-menu li > a i,
+.submenu-dark .header-navigation .nav > li .sub-menu li > a span {
   color: $bbh-lighter-blue !important;
 }
 
@@ -132,7 +139,11 @@ footer .bbh-menu-footer {
   //margin-top: -51px;
 }
 
-.header-navigation .nav > li > a:hover, .header-navigation .footer-top .widget.widget_nav_menu ul > li > a:hover, .footer-top .widget.widget_nav_menu .header-navigation ul > li > a:hover, .header-navigation .footer-bottom .widget.widget_nav_menu ul > li > a:hover, .footer-bottom .widget.widget_nav_menu .header-navigation ul > li > a:hover {
+.header-navigation .nav > li > a:hover,
+.header-navigation .footer-top .widget.widget_nav_menu ul > li > a:hover,
+.footer-top .widget.widget_nav_menu .header-navigation ul > li > a:hover,
+.header-navigation .footer-bottom .widget.widget_nav_menu ul > li > a:hover,
+.footer-bottom .widget.widget_nav_menu .header-navigation ul > li > a:hover {
   color: $bbh-orange;
 }
 
