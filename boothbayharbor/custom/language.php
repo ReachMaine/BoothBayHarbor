@@ -20,6 +20,7 @@
 				}
 	    	return $translated_text;
 		}
+		
 		add_filter( 'gettext', 'eai_change_theme_text', 20, 3 );
 	}
 

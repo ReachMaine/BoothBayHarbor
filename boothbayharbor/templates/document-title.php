@@ -19,7 +19,8 @@
 
           <h1>
               <?php if ( is_archive() ) : ?>
-                  <?php the_archive_title(); ?>
+                  <?php /*  the_archive_title(); */  echo single_cat_title( '', false );
+                  ?>
               <?php elseif ( is_post_type_archive() ) : ?>
                     <?php echo post_type_archive_title( '', false ).".."; ?>
               <?php elseif ( is_404() ) : ?>
