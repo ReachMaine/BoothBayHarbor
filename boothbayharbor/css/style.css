@@ -102,6 +102,9 @@ button,
 .button {
   background-color: #0084C7; }
 
+.widget.bbh-border0 {
+  border-top: 0px; }
+
 .widget-pb,
 .widget .widget-pb {
   padding-bottom: 30px; }
